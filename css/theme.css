@@ -157,10 +157,6 @@
 }
 
 
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-}
 
 p.white { font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 14px;
@@ -182,15 +178,6 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     text-align:left;
 }
 
-h1.small { font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 30px;
-    font-size-adjust:auto;
-	font-style: bold;
-	font-variant: normal;
-    font-weight: 200;
-    color: lightgrey;
-    text-align:left;
-}
 
 
 p.white-big { font-family: Futura, "Trebuchet MS", Arial, sans-serif;
@@ -285,51 +272,6 @@ p.white-big { font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 
 
 
-
-
-
-
-
-
-
-#photo{ 
-    float: left;  
-    margin-right: 1%; 
-    margin-bottom: 2em; 
-    width: calc(30% - 80px);
-}
-
-
-p.boxed{
-    
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-    color:white;
-    padding:5px;
-    
-}
-
-
-
-
-a.two:link {
-    color: black;
-    background: none;
-}
-a.two:visited {
-    color:black;
-    background: none;
-}
-a.two:hover {
-    color: hotpink;
-    background: white;
-}
-
-
-
 a.three:link {
     text-decoration: underline;
     color: white;
@@ -347,95 +289,9 @@ a.three:hover {
 }
 
 
-p { font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-    color: black;
-}
 
 
 
-
-
-p.clear {
-    clear: both;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 18px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-    color: white;
-}
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 160px;
-    background-color: none;
-    position: fixed;
-    height:100%;
-    right: 0px;
-    top:22%;
-    z-index: 3;
-}
-
-
-
-#nav-button{
-    top:5px;
-    right:-85px;
-    z-index: 15;
-    position:fixed;
-}
-
-@media screen and (min-width: 650px) {
-    nav-button{ right:-150px }}
-
-
-@media screen and (max-width: 650px) {
-    ul{ display:none }
-    
-}
-
-li a {
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-}
-
-/* Change the link color on hover */
-li a:hover {
-    background-color: white;
-    color: hotpink;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-}
-
-
-li a.pink {
-    display: block;
-    font-weight:bold;
-    color: darkorange;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-}
-
-/* Change the link color on hover */
-li a.pink:hover {
-    color: hotpink;
-    font-weight:bold;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-}
-
-li a.flower:hover {
-    background-color: darkorange;
-}
 
 
 
