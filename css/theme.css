@@ -117,22 +117,22 @@
     top:10px;
 }
 
-
 #finger-button {
     position:absolute; 
-    left:10%; 
-    top:40%; 
-    width:40%}
+    left:calc(10% + 50px); 
+    top:calc(20% + 150px); 
+    width:450px}
 #finger {
     position:absolute; 
-    left:40%; 
-    top:40%; 
-    width:27%}
+    left:calc(10% + 320px); 
+    top:calc(20% + 130px); 
+    width:320px}
 #contact1 {
     position:absolute; 
     left:10%; 
     top:20%; 
-    width:50%}
+    width:600px}
+
 
 
 
@@ -149,9 +149,9 @@
 @media screen and (max-width: 800px) {
     #welcome-container{ left:60px; top:280px;  }
     #front-button{ top:420px;}
-    #contact1 {width:90%; left:5%; top:10%}
-    #finger {top:42%; width:45%;}
-    #finger-button {top:40%; width:70%; left:7%}
+    #finger-button { left:calc(10% + 30px); top:calc(20% + 90px); width:370px}
+    #finger {left:calc(10% + 280px); top:calc(20% + 100px); width:240px}
+    #contact1 {left:10%; top:20%; width:500px}
       
     
 }
@@ -229,14 +229,17 @@ p.white-big { font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     #picture-div{left:55%; width:16%;} 
     #home-button{ 
         width:10%;}
+	
+    #finger-button { left:calc(10% + 20px); top:calc(20% + 60px); width:200px}
+    #finger {left:calc(10% + 120px); top:calc(20% + 70px); width:140px}
+    #contact1 {left:10%; top:20%; width:300px}
+    
 }
 
 @media screen and (max-width: 500px) {
     p.white{font-size:11px;}
     #projects-div { width:1000px; left:calc(50% - 500px);}
     #projects-txt-box { width:350px; left:calc(50% - 175px); top:30%;  }
-    #finger {top:30%; width:45%;}
-    #finger-button {top:30%; width:70%; left:7%}
     
     p.white-big{font-size:13px;}
     h1{font-size:27px;}
