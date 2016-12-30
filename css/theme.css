@@ -745,7 +745,7 @@ p.colum{
     .written-content{width:230px; min-height:230px;}
     p.boxLink{font-size:13px; font-weight:300;}
     p{font-size: 10px;}
-     p.playTxt{font-size:20px;}
+     p.playTxt{font-size:20px; font-weight:300;}
      #enter-pic{width:200px; left:calc(50% - 100px);}
     #coffee{width:200px; left:calc(50% - 100px);}
     p.enter{font-size:10px; opacity:1}
