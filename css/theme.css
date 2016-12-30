@@ -667,7 +667,7 @@ p.colum{
 @media screen and (max-width: 1180px ){
     #home-button{ left:40px; bottom:30px;}
     a.noChange{font-size: 18px;}
-    p.boxLink{font-size:16px; }
+    p.boxLink{font-size:16px; font-weight:300;}
     .box-txt{left:5px; bottom:-5px;}
     #play-fill{width:150px; height:150px;}
     .box{width:150px; height:150px;}
