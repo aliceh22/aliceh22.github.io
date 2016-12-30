@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Alice Haynes </title> 
+<meta name="viewport", content="width=device-width, initial-scale=1.0">
+<link title="file:///Users/Alice/Documents/Website/AliceWebsite favicon" rel="shortcut icon" href="img/favicon.ico" />
+ 
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:100,300,400,700" rel="stylesheet">
+    
+<link rel="stylesheet" type="text/css" href="css/theme.css"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    
+    console.log($(window).height());
+
+    $(".content").hover(function() {
+        $(this).css("cursor", "pointer")
+            $(this).find(".box-txt").addClass('hovered'); 
+        
+        }, function() {
+        $(this).find(".box-txt").removeClass('hovered');
+    });
+    
+
+    
+    
+    if($(window).width() < 600 && $(window).height() < 600 ){
+        $(".box").each( function(){
+            $(this).addClass('small-box');
+        });
+        
+    }
+    
+    $( window ).resize(function() {
+        
+     $(".content").hover(function() {
+        $(this).css("cursor", "pointer")
+            $(this).find(".box-txt").addClass('hovered'); 
+        
+        }, function() {
+        $(this).find(".box-txt").removeClass('hovered');
+    });
+       
+    if($(window).width() < 600 && $(window).height() < 600 ){
+        $(".box").each( function(){
+            $(this).addClass('small-box');
+        });
+        
+    } else {
+        
+        $(".box").each( function(){
+            if($(this).hasClass('small-box')){
+                $(this).removeClass('small-box');   
+            }
+        });
+    }
+        
+    });
+    
+    
+
+   
+});
+    
+</script>    
+    
+</head>
+
+ 
+<body >
+    
+<div id="container">
+    
+
+<div id="home-button"> <a class="noChange" href="Home.html"> alice haynes </a> </div>
+
+    
+<div id="home-box-container" class="box-container">
+        
+        <div  class="box" >
+            <div class="content" id="box5">
+                 <a href="Projects.html"> </a>
+                <div class="box-txt" >
+                <p class="boxLink" >projects </p>
+                </div> 
+            </div>
+        </div>    
+    
+        <div class="box" >
+            <div class="content" id="box4">
+                 <a href="Work.html"> </a>
+                <div class="box-txt" >
+                <p class="boxLink" >work </p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div  class="box" >
+            <div class="content" id="box3">
+                 <a href="Volunteering.html"> </a>
+                <div class="box-txt" >
+                <p class="boxLink" >volunteering </p>
+                </div> 
+            </div> 
+        </div>
+        
+        <div class="box" >
+            <div class="content" id="box2">
+                <a href="Play.html"> </a>
+                <div class="box-txt" >
+                <p class="boxLink" >play </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box" >
+            <div class="content" id="box1">
+                <a href="Contact.html"> </a>
+                <div class="box-txt" >
+                <p class="boxLink" >contact </p>
+                </div>
+            </div>
+        </div>
+    
+    
+    <div style="clear:both;">
+    </div>
+
+</div>
+    
+    
+<!-- <div id="about-me"> <p> Hello, my name is Alice. 
+    <br/> <br/>
+    With a logical mind and a creative heart, I am on an explorative journey to combine my passions for mathematics and art in a way that will benefit our world. You could say my aim in life is to help save the world and have fun while doing so! 
+    <br/> <br/>
+     
+    Growing up in a small English village deep in the countryside, I ran around fields with my friends creating whatever we could think of out of whatever we could find. Since then I have lived and thrived in Bristol, where I spent four years working towards my First Class Masters in Engineering Mathematics, coming top of my year and realising my love for modelling the world around us using mathematics. 
+    <br/>    <br/>
+
+    During those four years, while ostensibly studying, I was also flying around Bristol volunteering for eight different charities, developing my world-saving dreams, soaking up the fabulous music and arts scene as well as learning white-water kayaking, salsa dancing and how to feed myself. 
+    <br/><br/>
+    In the summers I worked in Edinburgh and London as part of a scholarship program with lloyds banking group, where I 
+
+    
+    And now, if you're sitting comfortably, lets begin. </p> </div> -->     
+</div> 
+    
+</body>
+</html>
+
+<!-- With a logical mind and a creative heart, I am on an explorative journey to combine my passions for mathematics and art in a way that will benefit our world. You could say my aim in life is to help save the world and have fun while doing so! 
+    <br/> <br/>
+     
+    Growing up in a small English village deep in the countryside, I ran around fields with my friends creating whatever we could think of out of whatever we could find. Since then I have lived and thrived in Bristol, where I spent four years working towards my First Class Masters in Engineering Mathematics, coming top of my year and realising my love for modelling the world around us using mathematics. 
+    <br/>    <br/>
+
+    During those four years, while ostensibly studying, I was also flying around Bristol volunteering for eight different charities, developing my world-saving dreams, soaking up the fabulous music and arts scene as well as learning white-water kayaking, salsa dancing and how to feed myself. 
+    <br/><br/>
+    In the summers I worked in Edinburgh and London as part of a scholarship program with lloyds banking group, where I 
+    
+    
+    
+
+    
+    And now, if you're sitting comfortably, lets begin.

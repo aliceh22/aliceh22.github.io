@@ -6,7 +6,54 @@
 <meta name="viewport", content="width=device-width, initial-scale=1.0">
 <link title="file:///Users/Alice/Documents/Website/AliceWebsite favicon" rel="shortcut icon" href="img/favicon.ico" />
 
-<link rel="stylesheet" type="text/css" href="css/theme.css">    
+    
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah" rel="stylesheet">
+    
+<link rel="stylesheet" type="text/css" href="css/theme.css"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    
+  //  $(".coffee").hover(function() {
+//        $('.colum').css("opacity", "0.9");
+  //  }, function() {
+    //    $('.colum').css("opacity", "0");
+//    });
+                      
+    $("#enter-pic").hover(function() {
+        $( this ).css("cursor","pointer");
+        $( ".enter" ).css("opacity", "0.9");
+        $('.coffee').css("color", "orangered");
+        
+        } , function() {$('#back').attr('src','img/road.jpg'); 
+        $( ".enter" ).css("opacity", "0");
+        $('.coffee').css("color", "orangered");
+                                                 //$('#back').attr('src','img/8.png');           
+    });
+    $("#enter-pic").click(function() {
+        
+        $('#back').attr('src','img/9.png');
+        //$("#home-link").animate({opacity: '0.6'}, "slow").waitSeconds;
+        //window.setTimeout(function(){window.location.assign("index.html");}, 1000);
+        //$('#back').attr('src','img/8.png');
+        //$("#home-link").animate({opacity: '0.4'}, "slow");
+        $( ".enter" ).css("opacity", "0");
+        $( ".coffee" ).css("opacity", "0");
+        
+        window.setTimeout(function(){window.location.assign("Home.html");}, 400);
+    });
+    
+    setTimeout( function(){
+    $('.enter').css("opacity", "0.9");
+        $('.coffee').css("color", "orangered");
+       },3000);
+});
+    
+</script>    
+    
 </head>
 
  
@@ -14,27 +61,16 @@
     
 
 
-<div id="background" style="background-color:black"> <img src="img/Background7-01.png", style="width:200%; opacity:0.8;" > </div>  
+    <div id="coffee"> <p class="coffee"> If they ask you to stand still, you should dance </p>  </div>    
+<div id="enter-pic" > 
+    <img id="back" src="img/road.jpg", style="width:100%; height:100%; opacity:0.9;" > <p class="enter" style="color:orangered;">click to enter </p> </div>    
     
 
-    <div id="name" > <a href="Alice.html"> <img src="img/Alice1-02.png" style="width:100%" onmouseover="this.src='img/Alice3-02.png'" onmouseout="this.src='img/Alice1-02.png'"> </a> </div>
-    
-    
-<div id="welcome-container"> <img src="img/Welcome-02.png" style="width:100%">  </div>    
-    
-<div id="front-button"> 
-    
-    <a href="Projects.html"> <img src="img/ButtonPro-01.png" style="width:19%; min-width:130px;"
-    onmouseover="this.src='img/ButtonProF-01.png'" onmouseout="this.src='img/ButtonPro-01.png'"></a> 
-    <a href="Work.html"> <img src="img/ButtonWor-01.png" style="width:19%; min-width:130px;"
-    onmouseover="this.src='img/ButtonWorF-01.png'" onmouseout="this.src='img/ButtonWor-01.png'"> </a>  
-    <a href="Volunteering.html"> <img src="img/ButtonVol-01.png" style="width:19%; min-width:130px;"
-    onmouseover="this.src='img/ButtonVolF-01.png'" onmouseout="this.src='img/ButtonVol-01.png'"> </a>  
-    <a href="Play.html"> <img src="img/ButtonPla-01.png" style="width:19%; min-width:130px;"
-    onmouseover="this.src='img/ButtonPlaF-01.png'" onmouseout="this.src='img/ButtonPla-01.png'"> </a>
-    <a href="Contact.html"> <img src="img/ButtonCon-01.png" style="width:19%; min-width:130px;"
-    onmouseover="this.src='img/ButtonConF-01.png'" onmouseout="this.src='img/ButtonCon-01.png'"> </a> </div> 
-   
+  
+
+
     
 </body>
 </html>
+
+<!-- <p class="colum"> Colum McCann <br/> </p>

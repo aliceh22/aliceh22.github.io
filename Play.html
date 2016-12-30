@@ -6,39 +6,201 @@
 <meta name="viewport", content="width=device-width, initial-scale=1.0">
 <link title="file:///Users/Alice/Documents/Website/AliceWebsite favicon" rel="shortcut icon" href="img/favicon.ico" />
 
-<link rel="stylesheet" type="text/css" href="css/theme.css">    
+<link rel="stylesheet" type="text/css" href="css/theme.css">   
+
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:100,300,400,700" rel="stylesheet">
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+   
+    $("#playbox5").hover(function() {
+        $(this).css("cursor", "pointer");
+        $(this).find(".box-txt").addClass('hovered');
+       
+   },function(){
+       $(this).find(".box-txt").removeClass('hovered');
+   });
+    
+   $("#playbox5").click(function() {
+        window.open('https://www.flickr.com/photos/145760272@N06/albums');
+   });
+    
+
+    if($( window ).width() < 800){
+        $("ul").css('opacity',0);
+        $("ul").css('right',-200);
+        $("#menu-button").css('opacity',1);
+        $("#menu-button").addClass('notyetclicked'); 
+        
+    } else {}
+
+    
+    $( window ).resize(function() {
+        
+         $("#playbox5").hover(function() {
+            $(this).css("cursor", "pointer");
+            $(this).find(".box-txt").addClass('hovered');
+
+       },function(){
+           $(this).find(".box-txt").removeClass('hovered');
+       });
+         
+        if($( window ).width() < 800){
+            $("ul").css('opacity',0);
+            $("ul").css('right',-200);
+            $("#menu-button").css('opacity',1);
+            $("#menu-button").addClass('notyetclicked');
+            
+        } else{
+            $("ul").css('opacity',1);
+            $("ul").css('right',0);
+            $("#menu-button").css('opacity',0);
+              
+        }
+    });
+    
+    $("#menu-button").click(function(){
+        if($("#menu-button").hasClass('notyetclicked')) {
+        $("ul").css('opacity',1);
+        $("ul").css('right',0);
+        $("#menu-button").css('opacity',1);
+        $("#menu-button").removeClass('notyetclicked');
+        }  else {
+        $("ul").css('opacity',0);
+        $("ul").css('right',-200);
+        $("#menu-button").css('opacity',1);
+        $("#menu-button").addClass('notyetclicked');
+        }
+    });
+                       
+
+    
+});
+</script>
+    
+    
 </head>
 
  
-<body style="background-color:#202020;">
+<body style="background-color:white;">
+    
+    
+    
+    
+    
+<div id="container">  
+        
+<div id="menu-button"> <p class="menu">menu</p></div>
+
+<div > <ul> <li><a href="Home.html">alice haynes</a></li> 
+    <li><p></p></li>
+    <li><a  href="Projects.html">projects</a></li> 
+    <li><a  href="Work.html">work</a></li> 
+    <li><a  href="Volunteering.html">volunteering</a></li>
+    <li><a class="pink" href="Play.html">play</a></li>
+    <li><a href="Contact.html">contact</a></li>
+    </ul> 
+</div>
+    
+<div id="projects-box-container" class="box-container" style="opacity:0.9">
+   
+    <!--<img src="img/10.png", style="position:absolute; width:100%; opacity:0.9; z-index:-10;" > -->
+ 
+    
+    
+    
+    <div  class="box" >
+        <div class="content-noa" id="playbox1">
+        <div class="box-txt"  style="left:55%;" >
+                <p class="playTxt" > c <span style="color:orange"></span>o m </p>
+        </div>
+        </div>
+   </div>
+    
+    <div  class="box" >
+        <div class="content-noa" id="playbox2">
+        <div class="box-txt" >
+                <p class="playTxt"  >i n g </p>
+            </div></div>
+    </div>
+    
+    <div  class="box" >
+        <div class="content-noa" id="playbox3">
+        <div class="box-txt" style="left:73%;">
+                <p class="playTxt"  >   s o<span style="color:orange"></span></p>
+            </div></div>
+    </div>
+    <div  class="box" >
+        <div class="content-noa" id="playbox4">
+        <div class="box-txt" >
+                <p class="playTxt"  > <span style="color:orange"></span>o n  </p>
+            </div></div>
+    </div>
+    
+    <div  class="box" >
+        <div class="content-noa" id="playbox5">
+        <div class="box-txt" >
+                <p class="boxLink"> flickr </p>
+            </div></div>
+    </div>
+    
+    <!--<div style="width:300px;
+    position: absolute;
+    left:calc(50% - 150px);
+    top:33%;">  
+    <h1 style="text-align:center">coming soon...</h1>
+    <p class="enter" style="opacity:1;">For now please check out some recent photography on my <a class="three" href="https://www.flickr.com/photos/145760272@N06/albums" target="_blank">flickr</a>. </p></div>
+    
 
     
-    <div id="background" > 
     
-    <div style="width:100%; height:100%; position:fixed; overflow:scroll">
-    
-    <div id="projects-div" > 
+    <!--
+    <div id="platonic"> <img src="img/platonicF-03.png" style="width:100%"> 
+    </div>
         
-    <div id="title-box"> <img src="img/ButtonPlaF-01.png" style="width:100%"> </div>
-    <div id="title-txt">
-            <div id="txt"> <p class="white"> Coming soon! <br/> Here will be all the things I consider Playtime and don't mind sharing with you...art, photography, film, graphics and multimedia pieces I am working on.
-             For now please check out some recent photography on my <a class="three" href="https://www.flickr.com/photos/145760272@N06/albums" target="_blank">flickr</a>.</p></div>
+        
+    <div style="position: fixed;
+    width:400px;
+    left: calc(50% - 80px);
+    top:calc(30% + 220px);">
+        <div style="position: absolute; width: 100%; left: 0px; top:0px; "> <p class="white"> Below is a snapshot of the projects I have worked on in recent years. Like to know more? Please contact me.</p></div>
+    </div> -->
+    
+   <!-- <div id="fill-container">
+    
+        <div id="spacer" ></div>
+    
+        <div id="white-background">
+            
+            <div id="picture-div"><img src="img/projects-11.png" style="width:100%;">
+            <div id="h1-box"> <div id="txt"> <h1>  Feel the Music <br/> <span style="font-size:large">2015  </span></h1>
+            </div>  </div>
+            </div>
+            
+            <div id="picture-writing"><div id="txt"><p class="dark"> 
+                Music is a key component of my everyday life and something I treasure. For my Masters thesis I decided to explore how I could make music more accessible to those with hearing impairments, who cannot experience music acoustically. To do this I investigated the use of sensory substitution to engender the same affective response in a user via haptics as they would have  when listening to the piece of music. <br/><br/>
+            
+                I designed, built and tested a wearable tactile interface in order to experiment with ideas. I generated mappings from audio tracks to vibration patterns, and assessed by how well they engendered the same affective response in the user as the music did. Two papers from my results are pending publication. <br/><br/>
+                See the <a class="three" href="poster.html" target="_blank">POSTER</a> or the <a class="three" href="AliceHaynesTechnicalProject.pdf" target="_blank">REPORT</a> to find out the results. Feel free to <a class="three" href="Contact.html">contact</a> me for further information.
+                </p></div></div>
+            
+            
+            
         </div>
-        
-     </div> 
-        
-        </div></div>
+     
+    </div>   -->
+</div> 
     
-    
-    
-    <!--<div style="position:fixed; top:20%; left:30%; width:40%;"> <p class="white" style="font-size=22px; font-style:bold;"> Coming soon! <br/> Here will be all the things I consider Playtime and don't mind sharing with you...art, photography, film, graphics and multimedia pieces I am working on.<br/>
-        <br/>
-        Recently with a friend who writes wonderful poetry I have been looking at how to create visual poems, incorporating his words with images and sketches. We are also looking at co-creating a children's book inspired by my travels.
-        </p>  </div> -->
-    
-    <div id="home-button" > 
-    <a href="index.html"> <img src="img/home-06.png" style="width:100%;"
-    onmouseover="this.src='img/homeP-06.png'" onmouseout="this.src='img/home-06.png'"> </a> </div> 
+   
+</div>
+
     
 </body>
 </html>
+
+<!--  <div id="about-me-play"> <p> Puzzles, projects, paint or plasticine. I love to play!   </p> </div>
+    

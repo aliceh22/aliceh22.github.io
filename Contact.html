@@ -6,32 +6,153 @@
 <meta name="viewport", content="width=device-width, initial-scale=1.0">
 <link title="file:///Users/Alice/Documents/Website/AliceWebsite favicon" rel="shortcut icon" href="img/favicon.ico" />
 
-<link rel="stylesheet" type="text/css" href="css/theme.css">    
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:100,300,400,700" rel="stylesheet">
+    
+<link rel="stylesheet" type="text/css" href="css/theme.css">   
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    
+    
+    $("ul").css('opacity',0);
+    $("ul").css('right',-200);
+    $("#menu-button").css('opacity',1);
+    $("#menu-button").addClass('notyetclicked');
+    
+    
+    $("#menu-button").click(function(){
+        if($("#menu-button").hasClass('notyetclicked')) {
+        $("ul").css('opacity',1);
+        $("ul").css('right',0);
+        $("#menu-button").css('opacity',1);
+        $("#menu-button").removeClass('notyetclicked');
+        }  else {
+        $("ul").css('opacity',0);
+        $("ul").css('right',-200);
+        $("#menu-button").css('opacity',1);
+        $("#menu-button").addClass('notyetclicked');
+        }
+    });
+    
+    $("#enter-pic").hover(function() {
+        $( this ).css("cursor","pointer");
+        $('#back').attr('src','img/1.png');
+        $( "#coffee" ).css("opacity", "0");
+        $( ".enter" ).css("opacity", "0.9");
+        } , function() {$('#back').attr('src','img/road.jpg'); 
+        $( ".enter" ).css("opacity", "0");  
+        $( "#coffee" ).css("opacity", "0.9");
+    });
+    
+    $("#enter-pic").click(function() {
+        
+        $('#back').attr('src','img/9.png');
+        window.setTimeout(function(){
+            window.location.href = "mailto:alicehaynes22@gmail.com";
+        }, 300);
+    });
+    
+    setTimeout( function(){
+    $('.enter').css("opacity", "0.9");
+    $( "#coffee" ).css("opacity", "0");
+    
+       },4000);
+    
+     $( window ).resize(function() {
+         $("#enter-pic").hover(function() {
+        $( this ).css("cursor","pointer");
+        $('#back').attr('src','img/1.png');
+        $( "#coffee" ).css("opacity", "0");
+        $( ".enter" ).css("opacity", "0.9");
+        } , function() {$('#back').attr('src','img/road.jpg'); 
+        $( ".enter" ).css("opacity", "0");  
+        $( "#coffee" ).css("opacity", "0.9");
+    });
+     });
+     
+    
+});
+    
+</script> 
+    
 </head>
 
  
-<body>
+<body style="background-color:white;">
+    
+    
+    
+    
+    
+<div id="container">  
+       
+        
+<div id="menu-button"> <p class="menu">menu</p></div>
+
+<div > <ul> <li><a href="Home.html">alice haynes</a></li> 
+    <li><p></p></li>
+    <li><a  href="Projects.html">projects</a></li> 
+    <li><a  href="Work.html">work</a></li> 
+    <li><a  href="Volunteering.html">volunteering</a></li>
+    <li><a  href="Play.html">play</a></li>
+    <li><a class="pink" href="Contact.html">contact</a></li>
+    </ul> 
+</div>
+    
+
+<div id="coffee"><p class="coffee">fancy a coffee?</p></div>
+    
+<div id="enter-pic">  <img id="back" src="img/road.jpg", style="width:100%; height:100%; opacity:0.9;" >  <p class="enter" style="color:palevioletred;">click to email me </p> </div>    
+    
+    </div>
+      
+    
+    
+    
+    
+<!--
+    
+
+$("#finger-button").hover(function() {
+        $( ".enter" ).css("opacity", "1");
+        } , function() { 
+        $( ".enter" ).css("opacity", "0");
+                                                 //$('#back').attr('src','img/8.png');           
+    });
+
+
+
+<div id="contact-box-container" >
+   
+    <img src="img/10.png", style="position:absolute; width:100%; opacity:0.9; z-index:-10;" > 
+   
+    <div style="width:500px;
+    position: absolute;
+    left:calc(50% - 250px);
+    top:22%;">  
+    <h1 >Fancy a coffee? </h1>
+    
+    <div id="finger-button"> 
+    <a href="mailto:alicehaynes22@gmail.com"> <img src="img/contactFinger-01.png" style="width:100%;"
+    onmouseover="this.src='img/contactFingerP-01.png'" onmouseout="this.src='img/contactFinger-01.png'"> </a> </div> 
+        
+    <p style="position:absolute; top:calc(20% + 180px); left:calc(50% - 70px); " class="enter">click to email me</p>
+     </div>
+  </div>
+</div>
+
+-->
     
 
 
-<div id="background" > <img src="img/Background9-01.png", style="width:100%"> </div>   
 
     
-<div id="home-button"> 
-    <a href="index.html"> <img src="img/home-06.png" style="width:100%;"
-    onmouseover="this.src='img/homeP-06.png'" onmouseout="this.src='img/home-06.png'"> </a> </div> 
-
-
-    
-<div id="contact1"> <img src="img/contact1-01.png" style="width:100%" ></div>
-    
-<div id="finger-button"> 
-    <a href="mailto:alicehaynes22@gmail.com"> <img src="img/fingerB2-03.png" style="width:100%;"
-    onmouseover="this.src='img/fingerBP2-03.png'" onmouseout="this.src='img/fingerB2-03.png'"> </a> </div> 
-<div id="finger"> <img src="img/finger-02.png" style="width:100%;"></div>
-
-    <!-- <div id="contact2"> <img src="contact2-04.png" style="width:100%" ></div> -->
 
     
 </body>
 </html>
+
+
