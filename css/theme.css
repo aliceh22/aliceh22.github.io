@@ -667,7 +667,7 @@ p.colum{
 @media screen and (max-width: 1180px ){
     #home-button{ left:40px; bottom:30px;}
     a.noChange{font-size: 18px;}
-    p.boxLink{font-size:16px;}
+    p.boxLink{font-size:16px; }
     .box-txt{left:5px; bottom:-5px;}
     #play-fill{width:150px; height:150px;}
     .box{width:150px; height:150px;}
@@ -740,10 +740,10 @@ p.colum{
     #home-box-container{ bottom:0px; }
 }
 
-@media screen and (max-width: 350px ){
+@media screen and (max-width: 380px ){
     .box{width:100px; height:100px;}
     .written-content{width:230px; min-height:230px;}
-    p.boxLink{font-size:13px;}
+    p.boxLink{font-size:13px; font-weight:300;}
     p{font-size: 10px;}
      p.playTxt{font-size:20px;}
      #enter-pic{width:200px; left:calc(50% - 100px);}
