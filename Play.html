@@ -37,7 +37,11 @@ $(document).ready(function(){
         $("#menu-button").addClass('notyetclicked'); 
         
     } else {}
-
+    
+    if($( window ).width() < 980){
+        $("#projects-box-container").css('max-width',400);
+    } else {}
+    
     
     $( window ).resize(function() {
         
@@ -48,7 +52,11 @@ $(document).ready(function(){
        },function(){
            $(this).find(".box-txt").removeClass('hovered');
        });
-         
+        
+        if($( window ).width() < 980){
+        $("#projects-box-container").css('max-width',400);
+        } else {}
+        
         if($( window ).width() < 800){
             $("ul").css('opacity',0);
             $("ul").css('right',-200);
