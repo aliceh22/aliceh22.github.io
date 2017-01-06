@@ -16,30 +16,103 @@
 <script>
 
 $(document).ready(function(){
+    
+    var big = 600;
+    var mid = 400;
+    
+    if($( window ).width() > big){
+        $('#back').attr('src','img/road400274-01.png');
+     } else if($( window ).width() > mid){
+        $('#back').attr('src','img/road300205-01.png');
+        $("#enter-pic").addClass('med');
+        $( "p.enter" ).css('font-size','12px');
+        $( 'p.coffee' ).css('font-size','12px');
+        $( ".coffee" ).addClass('med');
+         
+     } else{
+        $('#back').attr('src','img/road200137-01.png');
+        $("#enter-pic").addClass('small');
+        $( ".coffee" ).addClass('small');
+         $( 'p.enter' ).css('font-size','10px');
+         $( 'p.coffee' ).css('font-size','10px');
+     }
+    
+    
                       
-    $("#enter-pic").hover(function() {
+   $("#enter-pic").hover(function() {
         $( this ).css("cursor","pointer");
         $( ".enter" ).css("opacity", "0.9");
         $('.coffee').css("color", "orangered");
         
-        } , function() {$('#back').attr('src','img/road.jpg'); 
+        } , function() {
         $( ".enter" ).css("opacity", "0");
         $('.coffee').css("color", "orangered");
-                                                 //$('#back').attr('src','img/8.png');           
-    });
+   }); 
+    
+    
     $("#enter-pic").click(function() {
+            
+            $( ".enter" ).css("opacity", "0");
+            $( ".coffee" ).css("opacity", "0");
         
-        $('#back').attr('src','img/9.png');
-        $( ".enter" ).css("opacity", "0");
-        $( ".coffee" ).css("opacity", "0");
+        if($( window ).width() > big){
+            $('#back').attr('src','img/pixelroad400274-01.png');
+        } else if($( window ).width() > mid){
+            $('#back').attr('src','img/pixelroad300205-01.png');
+        } else{
+            $('#back').attr('src','img/pixelroad200137-01.png');
+        }
         
         window.setTimeout(function(){window.location.assign("Home.html");}, 800);
     });
+    
+    
+   
+    $(window).resize(function() {
+       
+    if($( window ).width() > big){
+        $('#back').attr('src','img/road400274-01.png');
+        
+        $( "p.enter" ).css('font-size','14px');
+        $( 'p.coffee' ).css('font-size','14px');
+        
+        if($("#enter-pic").hasClass('med')){
+            $("#enter-pic").removeClass('med');
+        }
+        
+     } else if($( window ).width() > mid){
+        $('#back').attr('src','img/road300205-01.png');
+        $("#enter-pic").addClass('med');
+        $( "p.enter" ).css('font-size','12px');
+        $( 'p.coffee' ).css('font-size','12px');
+        $( ".coffee" ).addClass('med');
+         
+        if($("#enter-pic").hasClass('small')){
+            $("#enter-pic").removeClass('small');
+        }
+         
+     } else{
+        $('#back').attr('src','img/road200137-01.png');
+        $("#enter-pic").addClass('small');
+        $( ".coffee" ).addClass('small');
+         $( 'p.enter' ).css('font-size','10px');
+         $( 'p.coffee' ).css('font-size','10px');
+     }
+    
+       
+   });
+
+     
+    
+
+    
     
     setTimeout( function(){
     $('.enter').css("opacity", "0.9");
         $('.coffee').css("color", "orangered");
        },3200);
+ 
+    
 });
     
 </script>    
@@ -53,7 +126,7 @@ $(document).ready(function(){
 
     <div id="coffee"> <p class="coffee"> If they ask you to stand still, you should dance </p>  </div>    
 <div id="enter-pic" > 
-    <img id="back" src="img/road.jpg", style="width:100%; height:100%; opacity:0.9;" > <p class="enter" style="color:orangered;">click to enter </p> </div>    
+    <img id="back" src="img/road400274-01.png", style="width:100%; height:100%; opacity:0.9;" > <p class="enter" style="color:orangered;">click to enter </p> </div>    
     
 
   
