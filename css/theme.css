@@ -698,6 +698,32 @@ p.colum{
 }
 
 
+
+
+
+
+/* processing */
+
+.processing-div{
+    margin:20px;
+    float:left;
+    width:auto;
+}
+
+
+#processing-container{
+    top:40px;
+    bottom:20px;
+    width:100%;
+    overflow: scroll;
+}
+
+
+
+
+
+
+
 /* small things*/
 
 @media screen and (max-width: 1180px ){
