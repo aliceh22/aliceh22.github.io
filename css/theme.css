@@ -712,7 +712,8 @@ p.colum{
 
 
 #processing-container{
-    top:40px;
+    position:absolute;
+	top:40px;
     bottom:20px;
     width:100%;
     overflow: scroll;
