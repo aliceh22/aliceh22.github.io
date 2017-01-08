@@ -713,10 +713,11 @@ p.colum{
 
 #processing-container{
     position:absolute;
-	top:40px;
+    top:40px;
     bottom:20px;
     width:100%;
     overflow: scroll;
+    height:calc(100% - 60px);
 }
 
 
