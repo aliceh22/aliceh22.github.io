@@ -81,7 +81,7 @@ void draw() {
 
   stroke(spiro);
   //float str = min(1+ang1/10,4);
-  strokeWeight(3);
+  strokeWeight(4);
   curve(ctr1x, ctr1y, prevPx, prevPy, Px, Py, ctr2x, ctr2y);
   
   ang1 = ang1+angCount;
