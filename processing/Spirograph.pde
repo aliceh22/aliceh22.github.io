@@ -1,11 +1,5 @@
 
 
-float R=200, r=50, rp=44; //SPIROGRAPH VARIABLES
-//R is the radius of outer circle
-//r is radius of inner circle (should be smaller than R)
-//rp is the distance from the center of the smaller circle 
-//that the drawing point is placed.
-
 
 float fps=100;  // frames per second - speed of animation
 float Cx, Cy, Mx, My, Px, Py, prevPx, prevPy, Mx1, My1, Mx2, My2;
@@ -19,8 +13,6 @@ color spiro =  #E8C35E;   //spirograph colour
 int seq = 1;
 int num=1;
 
-//#E8C35E  #2B6771 #bd6060
-//  #397A99 #E44E66 #F1D452  #076D9E
 
 
 
@@ -57,7 +49,7 @@ void setup() {
   frames = 2*PI*a /angCount;
   background(back);
   frameRate(fps);
-  //print(frames);
+  
 }
 
 
@@ -81,12 +73,7 @@ void draw() {
   ctr2y = My2 + rp*sin(ang2 - 2*ratio*angCount);
   
   
-  
-  //if(count<frames/2){
-  //  stroke(max(255-6*ang1,0), min(6*ang1,255), 255);
-  //} else{
-  //  stroke(max(255-3*ang1,0), min(3*ang1,255), 255);
-  //}
+ 
   
   stroke(spiro);
   //float str = min(1+ang1/10,4);
@@ -99,13 +86,7 @@ void draw() {
   ctr1y = prevPy;
   
   
-  //if(count % 5 == 0 && num<5*frames+1 && num>199){
-  //  String end = ".png";
-  //  String name = str(num);
-  //  name = name.concat(end);
-  //  saveFrame(name);
-  //}
-  
+
   
   if(count>=frames){
     if(seq==1){
@@ -132,81 +113,3 @@ void draw() {
 
 
 
-//void loopTilEnd(){
-//  while(count<=frames){
-//    redraw();
-//    count++;
-//  }
-//  return;
-//}
-
-
-//float Cx, Cy, Mx, My, Px, Py, prevPx, prevPy, Mx1, My1, Mx2, My2;
-//float angle1, angle2;
-//float R=100, r=80, rp=70;
-//float rm, ratio;
-//float speed=0.7, fps=40;
-//float ang1, ang2;
-//float ctr1x, ctr1y, ctr2x, ctr2y;
-//float angCount = PI/70;
-
-//void setup() {
-//  size(500, 500, P3D);
-//  ratio=R/r;
-//  rm= R-r;
-//  angle1 = 0;
-//  Cx = width/2;
-//  Cy = height/2;
-  
-//  Mx = Cx+rm*cos(ang1);
-//  My = Cy+rm*sin(ang1);
-//  Px = Mx + rp*cos(ang2);
-//  Py = My + rp*sin(ang2);
-  
-//  prevPx=Px;
-//  prevPy=Py;
-//  ctr1x=Px;
-//  ctr1y=Py;
-//  ctr2x=Px;
-//  ctr2y=Py;
-  
-  
-//  ang1 = radians(angle1);
-//  ang2 = radians(angle2);
-//  background(0);
-//  frameRate(fps);
-//}
-
-//void draw() {
-  
-//  ang2 = -ratio*ang1;
-  
-//  Mx = Cx + rm*cos(ang1);
-//  My = Cy + rm*sin(ang1);
-//  prevPx = Mx + rp*cos(ang2);
-//  prevPy = My + rp*sin(ang2);
-  
-//  Mx1 = Cx+rm*cos(ang1 + angCount);
-//  My1 = Cy+rm*sin(ang1 + angCount);
-//  Px = Mx1 + rp*cos(ang2 - ratio*angCount);
-//  Py = My1 + rp*sin(ang2 - ratio*angCount);
-
-//  Mx2 = Cx+rm*cos(ang1 + 2*angCount);
-//  My2 = Cy+rm*sin(ang1 + 2*angCount);
-//  ctr2x = Mx2 + rp*cos(ang2 - 2*ratio*angCount);
-//  ctr2y = My2 + rp*sin(ang2 - 2*ratio*angCount);
-  
-  
-  
-//  stroke(max(255-3*ang1,0), min(3*ang1,255), 255);
-//  float str = min(1+ang1/10,4);
-//  strokeWeight(str);
-//  curve(ctr1x, ctr1y, prevPx, prevPy, Px, Py, ctr2x, ctr2y);
-  
-//  ang1 = ang1+angCount;
-  
-//  ctr1x = prevPx;
-//  ctr1y = prevPy;
-  
- 
-//}
