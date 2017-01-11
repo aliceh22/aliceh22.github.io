@@ -148,12 +148,12 @@ $(document).ready(function(){
         if($("#menu-button").hasClass('notyetclicked')) {
         $("ul").css('opacity',1);
         $("ul").css('right',0);
-        $("#menu-button").css('opacity',1);
+        $("p.menu").text("x");
         $("#menu-button").removeClass('notyetclicked');
         }  else {
         $("ul").css('opacity',0);
         $("ul").css('right',-200);
-        $("#menu-button").css('opacity',1);
+        $("p.menu").text("menu");
         $("#menu-button").addClass('notyetclicked');
         }
     });
@@ -175,6 +175,8 @@ $(document).ready(function(){
 
 <div > <ul> <li><a href="Home.html">alice haynes</a></li> 
     <li><p></p></li>
+    <li><p></p></li>
+    <li><a  href="About.html">about</a></li>
     <li><a class="pink" href="Projects.html">projects</a></li> 
     <li><a href="Work.html">work</a></li> 
     <li><a href="Volunteering.html">volunteering</a></li>

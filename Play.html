@@ -20,13 +20,44 @@ $(document).ready(function(){
     $("#playbox5").hover(function() {
         $(this).css("cursor", "pointer");
         $(this).find(".box-txt").addClass('hovered');
-       
+        $("#playbox5").addClass('hover');
    },function(){
        $(this).find(".box-txt").removeClass('hovered');
+        $("#playbox5").removeClass('hover');
    });
     
    $("#playbox5").click(function() {
         window.open('https://www.flickr.com/photos/145760272@N06/albums');
+   });
+    
+    
+    $("#playbox6").hover(function() {
+        $(this).css("cursor", "pointer");
+        $(this).find(".box-txt").addClass('hovered');
+        $("#playbox6").addClass('hover');
+       
+   },function(){
+       $(this).find(".box-txt").removeClass('hovered');
+        $("#playbox6").removeClass('hover');
+   });
+    
+   $("#playbox6").click(function() {
+        window.open('http://in-wonderland-haynes.tumblr.com/');
+   });
+    
+    
+    $("#playbox7").hover(function() {
+        $(this).css("cursor", "pointer");
+        $(this).find(".box-txt").addClass('hovered');
+        $("#playbox7").addClass('hover');
+       
+   },function(){
+       $(this).find(".box-txt").removeClass('hovered');
+        $("#playbox7").removeClass('hover');
+   });
+    
+   $("#playbox7").click(function() {
+        window.open('http://www.alicehaynes.com/Processing.html');
    });
     
 
@@ -45,13 +76,7 @@ $(document).ready(function(){
     
     $( window ).resize(function() {
         
-         $("#playbox5").hover(function() {
-            $(this).css("cursor", "pointer");
-            $(this).find(".box-txt").addClass('hovered');
-
-       },function(){
-           $(this).find(".box-txt").removeClass('hovered');
-       });
+         
         
         if($( window ).width() < 980){
         $("#projects-box-container").css('max-width',400);
@@ -77,12 +102,12 @@ $(document).ready(function(){
         if($("#menu-button").hasClass('notyetclicked')) {
         $("ul").css('opacity',1);
         $("ul").css('right',0);
-        $("#menu-button").css('opacity',1);
+        $("p.menu").text("x");
         $("#menu-button").removeClass('notyetclicked');
         }  else {
         $("ul").css('opacity',0);
         $("ul").css('right',-200);
-        $("#menu-button").css('opacity',1);
+        $("p.menu").text("menu");
         $("#menu-button").addClass('notyetclicked');
         }
     });
@@ -108,6 +133,8 @@ $(document).ready(function(){
 
 <div > <ul> <li><a href="Home.html">alice haynes</a></li> 
     <li><p></p></li>
+    <li><p></p></li>
+    <li><a  href="About.html">about</a></li>
     <li><a  href="Projects.html">projects</a></li> 
     <li><a  href="Work.html">work</a></li> 
     <li><a  href="Volunteering.html">volunteering</a></li>
@@ -118,7 +145,7 @@ $(document).ready(function(){
     
 <div id="projects-box-container" class="box-container" style="opacity:0.9">
    
-    <!--<img src="img/10.png", style="position:absolute; width:100%; opacity:0.9; z-index:-10;" > -->
+    <!--<img src="img/10.png", style="position:absolute; width:100%; opacity:0.9; z-index:-10;" > 
  
     
     
@@ -149,7 +176,7 @@ $(document).ready(function(){
         <div class="box-txt" >
                 <p class="playTxt"  > <span style="color:orange"></span>o n  </p>
             </div></div>
-    </div>
+    </div> -->
     
     <div  class="box" >
         <div class="content-noa" id="playbox5">
@@ -157,7 +184,24 @@ $(document).ready(function(){
                 <p class="boxLink"> flickr </p>
             </div></div>
     </div>
+    <div  class="box2" ><div class="empty-box-border" ></div></div>
     
+    <div  class="box" >
+        <div class="content-noa" id="playbox7">
+        <div class="box-txt" >
+                <p class="boxLink"> processing </p>
+            </div></div>
+    </div>
+    <div  class="box2" ><div class="empty-box-border" ></div></div>
+    <div  class="box2" ><div class="empty-box-border" ></div></div>
+    <div  class="box" >
+        <div class="content-noa" id="playbox6">
+        <div class="box-txt" >
+                <p class="boxLink"> tumblr </p>
+            </div></div>
+    </div>
+    <div  class="box2" ><div class="empty-box-border" ></div></div>
+    <div  class="box2" ><div class="empty-box-border" ></div></div>
    
 </div> 
     
