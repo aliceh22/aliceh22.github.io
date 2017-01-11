@@ -1,5 +1,11 @@
 
 
+float R=200, r=50, rp=44; //SPIROGRAPH VARIABLES
+//R is the radius of outer circle
+//r is radius of inner circle (should be smaller than R)
+//rp is the distance from the center of the smaller circle 
+//that the drawing point is placed.
+
 
 float fps=100;  // frames per second - speed of animation
 float Cx, Cy, Mx, My, Px, Py, prevPx, prevPy, Mx1, My1, Mx2, My2;
@@ -12,8 +18,6 @@ color back = #EFE3CC;     //background colour
 color spiro =  #E8C35E;   //spirograph colour
 int seq = 1;
 int num=1;
-
-
 
 
 void setup() {
@@ -73,8 +77,8 @@ void draw() {
   ctr2y = My2 + rp*sin(ang2 - 2*ratio*angCount);
   
   
- 
   
+
   stroke(spiro);
   //float str = min(1+ang1/10,4);
   strokeWeight(3);
@@ -86,7 +90,13 @@ void draw() {
   ctr1y = prevPy;
   
   
-
+  //if(count % 5 == 0 && num<5*frames+1 && num>199){
+  //  String end = ".png";
+  //  String name = str(num);
+  //  name = name.concat(end);
+  //  saveFrame(name);
+  //}
+  
   
   if(count>=frames){
     if(seq==1){
@@ -108,7 +118,6 @@ void draw() {
   num++;
   
 }
-
 
 
 
