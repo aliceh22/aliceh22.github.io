@@ -634,7 +634,7 @@ p.playTxt{
     height:inherit;   
 }
 #playbox5{
-    background-image:url("../img/squares1-05.png");
+    background-image:url("../img/flickr2.png");
     background-size:cover;
     width:inherit;
     height:inherit;   
@@ -644,24 +644,24 @@ p.playTxt{
 }
 
 #playbox6{
-    background-image:url("../img/blunana-01.png");
+    background-image:url("../img/purple2-01.png");
     background-size:cover;
     width:inherit;
     height:inherit;   
 }
 
 #playbox6.hover{
-    background-image:url("../img/blunana-02.png");
+    background-image:url("../img/purple2-01.png");
 }
 
 #playbox7{
-    background-image:url("../img/orange.png");
+    background-image:url("../img/yellow-01.png");
     background-size:cover;
     width:inherit;
     height:inherit;   
 }
 #playbox7.hover{
-    background-image:url("../img/orange2.png");
+    background-image:url("../img/yellow-01.png");
 }
 
 
