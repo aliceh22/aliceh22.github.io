@@ -15,13 +15,11 @@
 <script>
 
 $(document).ready(function(){
-    
-    
+       
     $("ul").css('opacity',0);
     $("ul").css('right',-200);
     $("#menu-button").css('opacity',1);
-    $("#menu-button").addClass('notyetclicked');
-    
+    $("#menu-button").addClass('notyetclicked'); 
     
     $("#menu-button").click(function(){
         if($("#menu-button").hasClass('notyetclicked')) {
@@ -36,7 +34,6 @@ $(document).ready(function(){
         $("#menu-button").addClass('notyetclicked');
         }
     });
-    
     
     var big = 600;
     var mid = 400;
@@ -57,8 +54,6 @@ $(document).ready(function(){
          $( 'p.enter' ).css('font-size','10px');
          $( 'p.coffee' ).css('font-size','10px');
      }
-    
-    
                       
    $("#enter-pic").hover(function() {
         $( this ).css("cursor","pointer");
@@ -85,7 +80,6 @@ $(document).ready(function(){
         }
    }); 
     
-    
     $("#enter-pic").click(function() {
             
             $( ".enter" ).css("opacity", "0");
@@ -104,8 +98,6 @@ $(document).ready(function(){
         }, 600);
     });
     
-    
-   
     $(window).resize(function() {
        
     if($( window ).width() > big){
@@ -135,63 +127,52 @@ $(document).ready(function(){
         $( ".coffee" ).addClass('small');
          $( 'p.enter' ).css('font-size','10px');
          $( 'p.coffee' ).css('font-size','10px');
-     }
-    
-       
+     }    
    });
-    
-    
     
     setTimeout( function(){
     $('.enter').css("opacity", "0.9");
     $( "#coffee" ).css("opacity", "0");
     
-       },4000);
-    
-   
-
-
-    
-     
+       },4000);   
     
 });
     
-</script> 
-    
+</script>  
 </head>
 
- 
 <body style="background-color:white;">
-    
-    
-    
-    
-    
-<div id="container">  
-       
-        
-<div id="menu-button"> <p class="menu">menu</p></div>
+   
+    <div id="container">     
 
-<div > <ul> <li><a href="Home.html">alice haynes</a></li> 
-    <li><p></p></li>
-    <li><p></p></li>
-    <li><a  href="About.html">about</a></li>
-    <li><a  href="Projects.html">projects</a></li> 
-    <li><a  href="Work.html">work</a></li> 
-    <li><a  href="Volunteering.html">volunteering</a></li>
-    <li><a  href="Play.html">play</a></li>
-    <li><a class="pink" href="Contact.html">contact</a></li>
-    </ul> 
-</div>
-    
+        <div id="menu-button"> <p class="menu">menu</p></div>
 
-<div id="coffee"><p class="coffee">fancy a chat?</p></div>
-    
-<div id="enter-pic">  <img id="back" src="img/road400274-01.png", style="width:100%; height:100%; opacity:0.9;" >  <p class="enter" style="color:palevioletred;">click to email me </p> </div>    
-    
+        <div > 
+            <ul> 
+                <li><a href="Home.html">alice haynes</a></li> 
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><a  href="About.html">about</a></li>
+                <li><a  href="Projects.html">projects</a></li> 
+                <li><a  href="Work.html">work</a></li> 
+                <li><a  href="Volunteering.html">volunteering</a></li>
+                <li><a  href="Play.html">play</a></li>
+                <li><a class="pink" href="Contact.html">contact</a></li>
+            </ul> 
+        </div>
+
+
+        <div id="coffee">
+            <p class="coffee">fancy a chat?</p>
+        </div>
+
+        <div id="enter-pic">  
+            <img id="back" src="img/road400274-01.png", style="width:100%; height:100%; opacity:0.9;" >  
+            <p class="enter" style="color:palevioletred;">click to email me </p> 
+        </div>    
+
     </div>
-      
-    
+
 </body>
 </html>
 

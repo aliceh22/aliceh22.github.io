@@ -498,32 +498,42 @@ a.txt-link:visited{
 /* Work */
 
 #boxpm{
-    background-image:url("../img/squarepm-02.png");
+    background-image:url("../img/squares2-07.png");
     background-size:cover;
     width:inherit;
     height:inherit;   
 }
 #boxlloyd{
-    background-image:url("../img/squares2-07.png");
+    background-image:url("../img/squarepm-02.png");
     background-size:cover;
     width:inherit;
     height:inherit;   
 }
 
 #boxscot{
-    background-image:url("../img/squarepur1-02.png");
-    background-size:cover;
-    width:inherit;
-    height:inherit;   
-}
-#boxrobot2{
     background-image:url("../img/squarebulb2-02.png");
     background-size:cover;
     width:inherit;
     height:inherit;   
 }
-
-
+#boxrobot2{
+    background-image:url("../img/squares4-02.png");
+    background-size:cover;
+    width:inherit;
+    height:inherit;   
+}
+#boxvocal{
+    background-image:url("../img/squarepur1-03.png");
+    background-size:cover;
+    width:inherit;
+    height:inherit; 
+}
+#boxsoftwire{
+    background-image:url("../img/squares-12.png");
+    background-size:cover;
+    width:inherit;
+    height:inherit; 
+}
 
 
 

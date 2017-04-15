@@ -39,7 +39,6 @@ $(document).ready(function(){
         });  
     }
     
-    
     if($( window ).height() > 400){
     
     $(".content-noa").each(function() {
@@ -48,9 +47,7 @@ $(document).ready(function(){
             } else {}
          
         });
-    }
-    
-    
+    } 
 
     $(".content-noa").hover(function() { //change on hover
         $(this).css("cursor", "pointer")
@@ -70,8 +67,6 @@ $(document).ready(function(){
             $(this).find(".written-content").addClass('clicked');
         }  
     });
-    
-    
     
     $( window ).resize(function() {
         
@@ -139,10 +134,6 @@ $(document).ready(function(){
         
     });
     
-    
-    
-
-    
     $("#menu-button").click(function(){
         if($("#menu-button").hasClass('notyetclicked')) {
         $("ul").css('opacity',1);
@@ -155,304 +146,203 @@ $(document).ready(function(){
         $("p.menu").text("menu");
         $("#menu-button").addClass('notyetclicked');
         }
-    });
-    
-   
+    });   
 });
-   
-    
-</script>    
-    
+      
+</script>      
 </head>
-
  
-<body >
+<body>
     
 <div id="container">
     
-<div id="menu-button"> <p class="menu">menu</p></div>
+    <div id="menu-button"> <p class="menu">menu</p>
+    </div>
 
-<div > <ul> <li><a href="Home.html">alice haynes</a></li> 
-    <li><p></p></li>
-    <li><p></p></li>
-    <li><a  href="About.html">about</a></li>
-    <li><a  href="Projects.html">projects</a></li> 
-    <li><a  href="Work.html">work</a></li> 
-    <li><a class="pink" href="Volunteering.html">volunteering</a></li>
-    <li><a href="Play.html">play</a></li>
-    <li><a href="Contact.html">contact</a></li>
-    </ul> 
-</div>
-    
-<div id="projects-box-container" class="box-container">
+    <div > 
+        <ul> 
+            <li><a href="Home.html">alice haynes</a></li> 
+            <li><p></p></li>
+            <li><p></p></li>
+            <li><a  href="About.html">about</a></li>
+            <li><a  href="Projects.html">projects</a></li> 
+            <li><a  href="Work.html">work</a></li> 
+            <li><a class="pink" href="Volunteering.html">volunteering</a></li>
+            <li><a href="Play.html">play</a></li>
+            <li><a href="Contact.html">contact</a></li>
+        </ul> 
+    </div>
+
+    <div id="projects-box-container" class="box-container">
         
-       
-        
-   
-    
         <div class="box" >
             <div class="content-noa" id="boxtoucan">
                 <div class="box-txt" >
-                <p class="boxLink" >toucan rescue <br/> ranch</p>
+                    <p class="boxLink" >toucan rescue <br/> ranch</p>
                 </div>
-                <div class="written-content"> <p class="boxLink" style="color:black; text-align:right;" > toucan rescue ranch </p>  <p>
+                    
+                <div class="written-content"> 
+                    <p class="boxLink" style="color:black; text-align:right;" > toucan rescue ranch </p>  
+                    <p>
                     <a class="txt-link" href="http://toucanrescueranch.org/" target="_blank">The Toucan Rescue Ranch</a> in Costa Rica is dedicated for the care and rehabilitation of injured or confiscated wildlife. It began, in 2004, as a centre for toucans and other birds but has expanded to take in mammals and any animals in need!
                     <br/><br/>
                     I spent two weeks during my travels living and volunteering full time at the ranch helping to prepare food, feed the animals and clean anything needing cleaning. The ranch is a remarkable place with a wonderful team of volunteers dedicated to every one of the over 200 animals. Follow their <a class="txt-link" href="https://www.instagram.com/toucanrescueranch/">instagram</a> to see the baby sloths and other animals they care for.   
-                    </p> </div>
+                    </p>
+                </div>
             </div>
         </div>
-    <div  class="box4" ><div class="empty-box-border4" ></div></div>
-    
+        
+        <div  class="box4" ><div class="empty-box-border4" ></div></div>
+
         <div class="box" >
             <div class="content-noa" id="boxhungry">
                 <div class="box-txt" >
-                <p class="boxLink" > the hungry <br/> caterpillar </p>
+                    <p class="boxLink" > the hungry <br/> caterpillar </p>
                 </div>
-                <div class="written-content"> <p class="boxLink" style="color:black; text-align:right;" > the hungry caterpillar</p>  <p>
+                    
+                <div class="written-content"> 
+                    <p class="boxLink" style="color:black; text-align:right;" > the hungry caterpillar
+                    </p>  
+                    <p>
                     <a class="txt-link" href="https://www.facebook.com/HungryCaterpillarCoop/" target="_blank">The Hungry Caterpillar</a> is a food cooperative based in Bristol. A fun and passionate group of volunteers, we hold a weekly stall selling fairtrade, organic and ethical produce at wholesale prices to make it easy for students or locals to afford good food. Our efforts in making ethical and healthy food available and affordable were acknowledged in 2016 by a Bristol Green Volunteering Award.
                     <br/><br/>
                     Although one stall, once a week doesn't seem like a game-changer, I care deeply about ventures such as the co-op as I believe a lot more people would eat healthy and ethical food if it was cheaper and readily available...and a demand for organic, ethical produce would dramatically change our production methods for the better!
-    
-        
-
-                    </p> </div>
+                    </p> 
+                </div>
             </div>
         </div>
-    
+
         <div class="box" >
             <div class="content-noa" id="boxted">
                 <div class="box-txt" >
-                <p class="boxLink" >TEDx Bristol</p>
+                    <p class="boxLink" >TEDx Bristol</p>
                 </div>
-                <div class="written-content"> <p class="boxLink" style="color:black; text-align:right;" >TEDx Bristol </p>  <p>
+                    
+                <div class="written-content">
+                    <p class="boxLink" style="color:black; text-align:right;" >TEDx Bristol 
+                    </p>  
+                    <p>
                     If you haven't seen any <a class="txt-link" href="http://www.ted.com/" target="_blank">TED</a> talks then go have a look already! Standing for Technology, Education and Design, TED is a non-profit community that organise conferences across the globe to spread ideas and spark dialogue between different people. I love their mission and regularly watch their online talks.
                     <br/><br/> 
                     I jumped at the chance to volunteer at Bristol TEDx, a volunteer-run local TED conference in Colston Hall. I was helping wherever needed as a steward or guiding speakers. It was great to be a part of the day and find out about the interesting projects going on around Bristol.
-                    </p> </div>
+                    </p> 
+                </div>
             </div>
         </div>
-    
-    <div  class="box4" ><div class="empty-box-border4" ></div></div>
-    
+
+        <div  class="box4" ><div class="empty-box-border4" ></div></div>
+
         <div class="box" >
             <div class="content-noa" id="boxnature">
-                <div class="box-txt" >
-                <p class="boxLink" >festival of <br/> nature</p>
+                 <div class="box-txt" >
+                    <p class="boxLink" >festival of <br/> nature</p>
+                 </div>
+                    
+                <div class="written-content"> 
+                    <p class="boxLink" style="color:black; text-align:right;" > festival of nature</p>  
+                    <p>
+                    The <a class="txt-link" href="http://www.bnhc.org.uk/festival-of-nature/" target="_blank">Festival of Nature</a> is a project by the Bristol Natural History Consortium to celebrate the natural world as well as educate people in ways of being environmentally friendly. It is a fun family festival down on Bristol Harbourside with lots of activities for children and performances going on all around the harbour. 
+                    <br/><br/>
+                    Volunteers are there to steward, run activities and help with the general running of the festival. I loved being a part of the event, particularly in engaging kids who have grown up in the city to appreciate nature!
+                    </p> 
                 </div>
-                <div class="written-content"> <p class="boxLink" style="color:black; text-align:right;" > festival of nature</p>  <p>
-                      The <a class="txt-link" href="http://www.bnhc.org.uk/festival-of-nature/" target="_blank">Festival of Nature</a> is a project by the Bristol Natural History Consortium to celebrate the natural world as well as educate people in ways of being environmentally friendly. It is a fun family festival down on Bristol Harbourside with lots of activities for children and performances going on all around the harbour. 
-                     <br/><br/>
-
-                     Volunteers are there to steward, run activities and help with the general running of the festival. I loved being a part of the event, particularly in engaging kids who have grown up in the city to appreciate nature!
-
-                    </p> </div>
             </div>
         </div>
-    
+
         <div class="box" >
             <div class="content-noa" id="boxoxfam">
                 <div class="box-txt" >
-                <p class="boxLink" >oxfam</p>
+                    <p class="boxLink" >oxfam</p>
                 </div>
-                <div class="written-content"> <p class="boxLink" style="color:black; text-align:right;" > oxfam </p>  <p>
+                
+                <div class="written-content"> 
+                    <p class="boxLink" style="color:black; text-align:right;" > oxfam </p>  
+                    <p>
                     <a class="txt-link" href="http://www.oxfam.org.uk/" target="_blank">Oxfam</a> is one of the largest charities in the world with support from millions of people to alleviate poverty globally. I worked in their festival stewarding program at Boomtown and Bestival. An ingenious scheme, volunteers do three full shifts as stewards and the festival pays the charity for their work. In this way Oxfam raises £1 million each year! 
-        
-                        <br/><br/>
+                    <br/><br/>
                     The stewarding was challenging at times when dealing with emergency situations and difficult crowds. But mostly it was a great opportunity to work with interesting people, improve the experience for festival-goers and get the chance to enjoy the festivals ourselves.
-    
-
-                    </p> </div>
+                    </p> 
+                </div>
             </div>
         </div>
-    
-    
+
+
         <div class="box" >
             <div class="content-noa" id="boxbb">
                 <div class="box-txt" >
-                <p class="boxLink" >bursledon <br/>brickworks</p>
+                    <p class="boxLink" >bursledon <br/>brickworks</p>
                 </div>
-                <div class="written-content"> <p class="boxLink" style="color:black; text-align:right;" > bursledon brickworks </p>  <p>
-                     <a class="txt-link" href="http://www.bursledonbrickworks.org.uk/" target="_blank">Bursledon Brickworks</a> is a volunteer - run museum set in the last steam driven Victorian brickworks in the UK. Open to the public on weekends and with special open days once a month where the steam engines are run, it is a fun day out for families in the local area.
-                        <br/><br/>
+                
+                <div class="written-content"> 
+                    <p class="boxLink" style="color:black; text-align:right;" > bursledon brickworks </p>  
+                    <p>
+                    <a class="txt-link" href="http://www.bursledonbrickworks.org.uk/" target="_blank">Bursledon Brickworks</a> is a volunteer - run museum set in the last steam driven Victorian brickworks in the UK. Open to the public on weekends and with special open days once a month where the steam engines are run, it is a fun day out for families in the local area.
+                    <br/><br/>
                     I help wherever needed, either in the cafe or supervising visiting kids with making clay bricks and pots. The museum has been making many improvements over the last few years, all thanks to the volunteers and the board of trustees, and it is great to see families enjoying the unique space.
-
-                    </p> </div>
+                    </p> 
+                </div>
             </div>
         </div>
-    
+
         <div class="box" >
             <div class="content-noa" id="boxcons">
                 <div class="box-txt" >
-                <p class="boxLink" >conservation <br/> society</p>
+                    <p class="boxLink" >conservation <br/> society</p>
                 </div>
-                <div class="written-content"> <p class="boxLink" style="color:black; text-align:right;" > conservation </p>  <p>
+                
+                <div class="written-content"> 
+                    <p class="boxLink" style="color:black; text-align:right;" > conservation 
+                    </p>  
+                    <p>
                     The Bristol <a class="txt-link" href="http://bucg.org.uk/" target="_blank">Conservation Society</a> is a group dedicated to improving the biodiversity in the local areas around Bristol. This is done in many ways such as woodland management, coppicing and planting or helping with land maintenance at local areas such as the city farms. 
                     <br/><br/>
                     I really enjoyed getting outdoors and dirty with this enthusiastic team, particularly on trips out to other areas such as the Ravenshill Woodland Reserve where the group does a lot of work to preserve this area of ancient woodland.
-
-                    </p> </div>
+                    </p> 
+                </div>
             </div>
         </div>
-    
+
         <div class="box" >
             <div class="content-noa" id="boxsrobot">
                 <div class="box-txt" >
-                <p class="boxLink" >student <br/> robotics</p>
+                    <p class="boxLink" >student <br/> robotics</p>
                 </div>
-                <div class="written-content"> <p class="boxLink" style="color:black; text-align:right;" > student robotics</p>  <p>
+                
+                <div class="written-content"> 
+                    <p class="boxLink" style="color:black; text-align:right;" > student robotics
+                    </p>  
+                    <p>
                     <a class="txt-link" href="https://www.studentrobotics.org/" target="_blank">Student Robotics</a> is a scheme across UK schools enabling teams of 16 -18 year old students to create robots for a nationwide competition. 
                     My role as a volunteer was to mentor a team throughout their build, giving guidance but mostly encouragement to experiment and work together as a team. My group were students at Bristol QEH school. 
-                      <br/><br/>  
+                    <br/><br/>  
                     The aim of the competition is to encourage young adults to engage in Engineering and learn basic skills such as programming, teamwork and design. As a female engineer, I think it is very important to inform younger students about the opportunities available to them and the wider applications of STEM subjects.
-
-                    </p> </div>
+                    </p> 
+                </div>
             </div>
         </div>
-    
-    
-        
-    
-    
+
         <div class="box" >
             <div class="content-noa" id="boxjol">
                 <div class="box-txt" >
-                <p class="boxLink" >jolidays</p>
+                    <p class="boxLink" >jolidays</p>
                 </div>
-                <div class="written-content"> <p class="boxLink" style="color:black; text-align:right;" > jolidays</p>  <p>
+                
+                <div class="written-content"> 
+                    <p class="boxLink" style="color:black; text-align:right;" > jolidays</p>  
+                    <p>
                     Jolidays is a charity run by Bristol students that provides activity days and residential weekends for young carers age 8 -18. It allows them a bit of time away from their responsibilities at home to try new things, make friends and just play!
                     <br/><br/>
                     As all the volunteers are students we take equal responsibility for supervising the kids when on a trip. I particularly enjoyed the weekend trips, seeing children overcome their fears to integrate with the group or try something new like zip-lining.
-
-                    </p> </div>
+                    </p> 
+                </div>
             </div>
         </div>
-    
-     <div  class="box4" ><div class="empty-box-border4" ></div></div>
-    
-    
-    
-    
+
+        <div  class="box4" ><div class="empty-box-border4" ></div></div>
+        
     </div>
     </div>
-    </body>
+</body>
 </html>
 
-<!-- 
- $(document).ready(function(){
-    
-    if($( window ).width() < 754){
-        $("ul").css('opacity',0);
-        $("ul").css('right',-200);
-        $("#menu-button").css('opacity',1);
-        $("#menu-button").addClass('notyetclicked');
-        $("#projects-box-container").css('right', 40);
-        $("#projects-box-container").css('width', 'calc(100% - 40px)');
-            
-        $(".content-noa").each(function() {
-        if($(this).offset().left > 100 ) {
-                $(this).find(".written-content").addClass('left');
-            } else {}});
-        
-        } else
-        {
-        $(".content-noa").each(function() {
-        if($(this).offset().left > ($( window ).width() - 640 )) {
-            $(this).find(".written-content").addClass('left');
-        } else{}});
-    }
-    
-    
 
-    $(".content-noa").hover(function() {
-        $(this).css("cursor", "pointer")
-            $(this).find(".box-txt").addClass('hovered'); 
-        
-        }, function() {
-        $(this).find(".box-txt").removeClass('hovered');
-    });
-    
-    $(".content-noa").click(function() {  
-        $(".content-noa").not($(this)).find(".written-content").removeClass('clicked');
-        
-        if($(this).find(".written-content").hasClass('clicked')){
-            $(this).find(".written-content").removeClass('clicked');
-        }
-        else { 
-            $(this).find(".written-content").addClass('clicked');
-        }  
-    });
-    
-    
-    $( window ).resize(function() {
-         
-        if($( window ).width() < 754){
-            $("ul").css('opacity',0);
-            $("ul").css('right',-200);
-            $("#menu-button").css('opacity',1);
-            $("#menu-button").addClass('notyetclicked');
-            $("#projects-box-container").css('right', 40);
-            $("#projects-box-container").css('width', 'calc(100% - 40px)');
-            
-            if($(this).offset().left > 100 ) {
-                $(this).find(".written-content").addClass('left');
-            } else if($(this).find(".written-content").hasClass('left')) { 
-                $(this).find(".written-content").removeClass('left');
-            }
-            
-        } else{
-            $("ul").css('opacity',1);
-            $("ul").css('right',0);
-            $("#menu-button").css('opacity',0);
-            $("#projects-box-container").css('right', 240);
-            $("#projects-box-container").css('width', 'calc(100% - 240px)');
-            
-            $(".content-noa").each(function() {
-            if($(this).offset().left > ($( window ).width() - 640 )) {
-                $(this).find(".written-content").addClass('left');
-            } else if($(this).find(".written-content").hasClass('left')) { 
-                $(this).find(".written-content").removeClass('left');
-            }
-
-            if($(this).offset().top > ($( window ).height() - 250 ) && $(this).offset().top > 60) {
-                $(this).find(".written-content").addClass('top');
-            } else if($(this).find(".written-content").hasClass('top')) { 
-                $(this).find(".written-content").removeClass('top');
-            }  
-        })
-    };
-        
-    
-});
-    
-    
-    
-    
-    setInterval(function(){
-        $(".content-noa").each(function() {
-         if($(this).offset().top > ($( window ).height() - 420 ) && $(this).offset().top > 60) {
-            $(this).find(".written-content").addClass('top');
-        } else if($(this).find(".written-content").hasClass('top')) { 
-            $(this).find(".written-content").removeClass('top');
-        }   
-        });
-        
-        
-    }, 500);
-    
-    $("#menu-button").click(function(){
-        if($("#menu-button").hasClass('notyetclicked')) {
-        $("ul").css('opacity',1);
-        $("ul").css('right',0);
-        $("#menu-button").css('opacity',1);
-        $("#menu-button").removeClass('notyetclicked');
-        }  else {
-        $("ul").css('opacity',0);
-        $("ul").css('right',-200);
-        $("#menu-button").css('opacity',1);
-        $("#menu-button").addClass('notyetclicked');
-        }
-    });
-    
-   
-});

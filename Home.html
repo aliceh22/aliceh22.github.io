@@ -16,8 +16,6 @@
 
 $(document).ready(function(){
     
-    
-
     $(".content").hover(function() {
         $(this).css("cursor", "pointer")
             $(this).find(".box-txt").addClass('hovered'); 
@@ -25,9 +23,6 @@ $(document).ready(function(){
         }, function() {
         $(this).find(".box-txt").removeClass('hovered');
     });
-    
-
-    
     
     if($(window).width() < 600 && $(window).height() < 600 ){
         $(".box").each( function(){
@@ -58,29 +53,22 @@ $(document).ready(function(){
                 $(this).removeClass('small-box');   
             }
         });
-    }
-        
+    }       
     });
-    
-    
-
    
 });
     
-</script>    
-    
+</script>     
 </head>
 
- 
-<body >
+<body>
     
 <div id="container">
     
-
-<div id="home-button"> <a class="noChange" href="About.html"> alice haynes &lsaquo; &lsaquo; &lsaquo; </a> </div>
+    <div id="home-button"> <a class="noChange" href="About.html"> alice haynes &lsaquo; &lsaquo; &lsaquo; </a> </div>
 
     
-<div id="home-box-container" class="box-container">
+    <div id="home-box-container" class="box-container">
         
         <div  class="box" >
             <div class="content" id="box5">
@@ -103,7 +91,7 @@ $(document).ready(function(){
         
         <div  class="box" >
             <div class="content" id="box3">
-                 <a href="Volunteering.html"> </a>
+                <a href="Volunteering.html"> </a>
                 <div class="box-txt" >
                 <p class="boxLink" >volunteering </p>
                 </div> 
@@ -128,13 +116,10 @@ $(document).ready(function(){
             </div>
         </div>
     
-    
-    <div style="clear:both;">
-    </div>
-
-</div>
-    
-    
+        <div style="clear:both;">
+        </div>
+        
+    </div>    
 </div> 
     
 </body>
