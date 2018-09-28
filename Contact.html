@@ -39,16 +39,16 @@ $(document).ready(function(){
     var mid = 400;
     
     if($( window ).width() > big){
-        $('#back').attr('src','img/road400274-01.png');
+        $('#back').attr('src','img/chat.jpg');
      } else if($( window ).width() > mid){
-        $('#back').attr('src','img/road300205-01.png');
+        $('#back').attr('src','img/chat.jpg');
         $("#enter-pic").addClass('med');
         $( "p.enter" ).css('font-size','12px');
         $( 'p.coffee' ).css('font-size','12px');
         $( ".coffee" ).addClass('med');
          
      } else{
-        $('#back').attr('src','img/road200137-01.png');
+        $('#back').attr('src','img/chat.jpg');
         $("#enter-pic").addClass('small');
         $( ".coffee" ).addClass('small');
          $( 'p.enter' ).css('font-size','10px');
@@ -61,11 +61,11 @@ $(document).ready(function(){
         $( "#coffee" ).css("opacity", "0");
        
        if($( window ).width() > big){
-            $('#back').attr('src','img/pinkroad400273-01.png');
+            $('#back').attr('src','img/chat.jpg');
         } else if($( window ).width() > mid){
-            $('#back').attr('src','img/pinkroad300205-01.png');
+            $('#back').attr('src','img/chat.jpg');
         } else{
-            $('#back').attr('src','img/pinkroad200137-01.png');
+            $('#back').attr('src','img/chat.jpg');
         }
         
         } , function() {
@@ -73,11 +73,11 @@ $(document).ready(function(){
         $( "#coffee" ).css("opacity", "0.9");
         
        if($( window ).width() > big){
-            $('#back').attr('src','img/road400274-01.png');
+            $('#back').attr('src','img/chat.jpg');
         } else if($( window ).width() > mid){
-            $('#back').attr('src','img/road300205-01.png');
+            $('#back').attr('src','img/chat.jpg');
         } else{
-            $('#back').attr('src','img/road200137-01.png');
+            $('#back').attr('src','img/chat.jpg');
         }
    }); 
     
@@ -87,22 +87,22 @@ $(document).ready(function(){
             $( ".coffee" ).css("opacity", "0");
         
         if($( window ).width() > big){
-            $('#back').attr('src','img/pixelroad400274-01.png');
+            $('#back').attr('src','img/chat.jpg');
         } else if($( window ).width() > mid){
-            $('#back').attr('src','img/pixelroad300205-01.png');
+            $('#back').attr('src','img/chat.jpg');
         } else{
-            $('#back').attr('src','img/pixelroad200137-01.png');
+            $('#back').attr('src','img/chat.jpg');
         }
         
        window.setTimeout(function(){
-            window.location.href = "mailto:alicehaynes22@gmail.com";
+            window.location.href = "mailto:alice.haynes@bristol.ac.uk";
         }, 600);
     });
     
     $(window).resize(function() {
        
     if($( window ).width() > big){
-        $('#back').attr('src','img/road400274-01.png');
+        $('#back').attr('src','img/chat.jpg');
         
         $( "p.enter" ).css('font-size','14px');
         $( 'p.coffee' ).css('font-size','14px');
@@ -112,7 +112,7 @@ $(document).ready(function(){
         }
         
      } else if($( window ).width() > mid){
-        $('#back').attr('src','img/road300205-01.png');
+        $('#back').attr('src','img/chat.jpg');
         $("#enter-pic").addClass('med');
         $( "p.enter" ).css('font-size','12px');
         $( 'p.coffee' ).css('font-size','12px');
@@ -123,7 +123,7 @@ $(document).ready(function(){
         }
          
      } else{
-        $('#back').attr('src','img/road200137-01.png');
+        $('#back').attr('src','img/chat.jpg');
         $("#enter-pic").addClass('small');
         $( ".coffee" ).addClass('small');
          $( 'p.enter' ).css('font-size','10px');
@@ -135,7 +135,7 @@ $(document).ready(function(){
     $('.enter').css("opacity", "0.9");
     $( "#coffee" ).css("opacity", "0");
     
-       },4000);   
+       },3000);   
     
 });
     
@@ -154,8 +154,8 @@ $(document).ready(function(){
                 <li><p></p></li>
                 <li><p></p></li>
                 <li><a  href="About.html">about</a></li>
-                <li><a  href="Projects.html">projects</a></li> 
-                <li><a  href="Work.html">work</a></li> 
+                <li><a  href="Current.html">current</a></li> 
+                <li><a  href="Archive.html">archive</a></li> 
                 <li><a  href="Volunteering.html">volunteering</a></li>
                 <li><a  href="Play.html">play</a></li>
                 <li><a class="pink" href="Contact.html">contact</a></li>
@@ -168,8 +168,10 @@ $(document).ready(function(){
         </div>
 
         <div id="enter-pic">  
-            <img id="back" src="img/road400274-01.png", style="width:100%; height:100%; opacity:0.9;" >  
-            <p class="enter" style="color:palevioletred;">click to email me </p> 
+            <img id="back" src="img/chat.jpg", style="width:80%; margin-left:10%; opacity:0.9;" >  
+            <p class="enter" style="color:darkorange;" >
+               
+                click to email me  </p> 
         </div>    
 
     </div>

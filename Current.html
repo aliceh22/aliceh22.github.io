@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Alice Haynes </title> 
+<meta name="viewport", content="width=device-width, initial-scale=1.0">
+<link title="file:///Users/Alice/Documents/Website/AliceWebsite favicon" rel="shortcut icon" href="img/favicon.ico" />
+
+    
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:100,300,400,700" rel="stylesheet">
+    
+<link rel="stylesheet" type="text/css" href="css/theme.css"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    
+    if($( window ).width() < 800){
+        $("ul").css('opacity',0);
+        $("ul").css('right',-200);
+        $("#menu-button").css('opacity',1);
+        $("#menu-button").addClass('notyetclicked');
+        
+        $(".content-noa").each(function() {
+        if($(this).offset().left > 100 ) {
+                $(this).find(".written-content").addClass('left');
+            } else {}
+         
+        });  
+        
+    } else {
+        $(".content-noa").each(function() {
+        if($(this).offset().left > 300 ) {
+                $(this).find(".written-content").addClass('left');
+            } else {}
+         
+        });  
+    }
+    
+    
+    if($( window ).height() > 400){
+    
+    $(".content-noa").each(function() {
+        if($(this).offset().top > 350 ) {
+                $(this).find(".written-content").addClass('top');
+            } else {}
+         
+        });
+    }
+
+    $(".content-noa").hover(function() { //change on hover
+        $(this).css("cursor", "pointer")
+            $(this).find(".box-txt").addClass('hovered'); 
+        
+        }, function() {
+        $(this).find(".box-txt").removeClass('hovered');
+    });  
+    
+    $(".content-noa").click(function() {  //close any other open content and open/close this one
+        $(".content-noa").not($(this)).find(".written-content").removeClass('clicked');
+        if($(this).find(".written-content").hasClass('clicked')){
+            $(this).find(".written-content").removeClass('clicked');
+        }
+        else { 
+            $(this).find(".written-content").addClass('clicked');
+        }  
+    });  
+    
+    $( window ).resize(function() {
+        
+        $(".content-noa").hover(function() { //change on hover
+        $(this).css("cursor", "pointer")
+            $(this).find(".box-txt").addClass('hovered'); 
+        
+        }, function() {
+        $(this).find(".box-txt").removeClass('hovered');
+    });
+         
+        if($( window ).width() < 800){
+            $("ul").css('opacity',0);
+            $("ul").css('right',-200);
+            $("#menu-button").css('opacity',1);
+            $("#menu-button").addClass('notyetclicked');
+            
+            $(".content-noa").each(function() {
+                if($(this).find(".written-content").hasClass('top')){
+                    $(this).find(".written-content").removeClass('top');
+                }
+                if($(this).find(".written-content").hasClass('left')){
+                    $(this).find(".written-content").removeClass('left');
+                }
+                if($(this).offset().left > 100 ) {
+                $(this).find(".written-content").addClass('left');
+                } else {}
+            });
+            
+        } else{
+            $("ul").css('opacity',1);
+            $("ul").css('right',0);
+            $("#menu-button").css('opacity',0);
+            
+            $(".content-noa").each(function() {
+                if($(this).find(".written-content").hasClass('top')){
+                    $(this).find(".written-content").removeClass('top');
+                }
+                if($(this).find(".written-content").hasClass('left')){
+                    $(this).find(".written-content").removeClass('left');
+                }
+                if($(this).offset().left > 300 ) {
+                $(this).find(".written-content").addClass('left');
+                } else {}
+            });
+              
+        }
+        
+        if($( window ).height() > 550){
+            $(".content-noa").each(function() {
+            if($(this).offset().top > 350 ) {
+                    $(this).find(".written-content").addClass('top');
+                } else {}
+
+            });
+        } else if($( window ).height() > 350){
+            $(".content-noa").each(function() {
+            if($(this).offset().top > 350 ) {
+                    $(this).find(".written-content").addClass('top');
+                } else {}
+
+            });
+        } else{}
+     
+    });
+    
+    $("#menu-button").click(function(){
+        if($("#menu-button").hasClass('notyetclicked')) {
+        $("ul").css('opacity',1);
+        $("ul").css('right',0);
+        $("p.menu").text("x");
+        $("#menu-button").removeClass('notyetclicked');
+        }  else {
+        $("ul").css('opacity',0);
+        $("ul").css('right',-200);
+        $("p.menu").text("menu");
+        $("#menu-button").addClass('notyetclicked');
+        }
+    });
+    
+   
+});
+    
+</script>        
+</head>
+ 
+<body >
+    
+<div id="container">
+  
+    <div id="menu-button"> <p class="menu">menu</p></div>
+
+
+    <div > 
+        <ul> 
+            <li><a href="Home.html">alice haynes</a></li> 
+            <li><p></p></li>
+            <li><p></p></li>
+            <li><a  href="About.html">about</a></li>
+            <li><a class="pink" href="Current.html">current</a></li> 
+            <li><a href="Archive.html">archive</a></li> 
+            <li><a href="Volunteering.html">volunteering</a></li>
+            <li><a href="Play.html">play</a></li>
+            <li><a href="Contact.html">contact</a></li>
+        </ul> 
+    </div>
+    
+    <div id="projects-box-container" class="box-container">
+
+        <div class="boxHeading">
+                <p class="box-heading">
+                    To be updated...please bear with.
+                </p>
+        </div>
+    
+                
+        <div style="clear:both;">
+        </div>
+    </div>
+</div>  
+    
+</body>
+</html>
+
+
