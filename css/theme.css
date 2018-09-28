@@ -19,7 +19,7 @@ p.enter { font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     position:fixed; 
     width:400px; 
     height:274px;
-    top:25%; 
+    top:20%; 
     left:calc(50% - 200px);
 }
 
@@ -54,7 +54,7 @@ p.coffee { font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 #coffee{
     position:fixed; 
     width:400px; 
-    bottom:75%; 
+    bottom:80%; 
     left:calc(50% - 200px);  
 }
 
@@ -100,7 +100,7 @@ p.menu{display: block;
 
 /* Change the link color on hover */
 p.menu:hover {
-    color: palevioletred;
+    color: darkorange;
     font-family: 'Lato', sans-serif;
     cursor:pointer;
 }
@@ -162,6 +162,13 @@ p.menu:hover {
     margin-bottom:20px;
 }
 
+.boxHeading{
+    width:100%;
+    height: 60px;
+    float:left;
+    margin-left:20px;
+    margin-bottom:20px;
+}
 
 
 .content{
@@ -226,11 +233,16 @@ p.menu:hover {
     height:inherit;
 }
 #box5{
-    background-image:url("../img/square-14.png");
+    background-image:url("../img/square-15.png");
     background-size:cover;
     width:inherit;
-    height:inherit;
-    
+    height:inherit;   
+}
+#boxroof{
+    background-image:url("../img/boxroof-04.png");
+    background-size:cover;
+    width:inherit;
+    height:inherit;   
 }
 
 
@@ -294,7 +306,7 @@ a.noChange:hover {
     font-size:25px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    color: palevioletred;
+    color: darkorange;
     text-align:left;
 }
 
@@ -387,12 +399,12 @@ li a {
     text-align:right;
 }
 li a.pink{
-    color:palevioletred;
+    color:darkorange;
 }
 
 /* Change the link color on hover */
 li a:hover {
-    color: palevioletred;
+    color: darkturquoise;
     font-family: 'Lato', sans-serif;
     cursor:pointer;
 }
@@ -410,7 +422,12 @@ p{
     line-height: auto;
 }
 
-
+.box-heading{
+    font-size:25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: darkorange;
+}
 
 
 
@@ -456,7 +473,7 @@ a.txt-link{
 
 a.txt-link:hover{
     text-decoration:none;
-    color:palevioletred;
+    color:darkturquoise;
 }
 a.txt-link:visited{
     color:black;
@@ -584,6 +601,7 @@ a.txt-link:visited{
     width:inherit;
     height:inherit;   
 }
+
 #boxcons{
     background-image:url("../img/squares-11.png");
     background-size:cover;
