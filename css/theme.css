@@ -270,6 +270,7 @@ p.menu:hover {
     position: absolute;
     left:60px;
     bottom:60px;
+    top: 60px;
 }
 
 #about-me{
