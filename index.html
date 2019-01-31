@@ -54,6 +54,7 @@ $(document).ready(function(){
             
             $( ".enter" ).css("opacity", "0");
             $( ".coffee" ).css("opacity", "0");
+        $(this).unbind("mouseenter mouseleave");
         
         if($( window ).width() > big){
             $('#back').attr('src','img/Alice_glitched2.jpg');
