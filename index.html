@@ -21,16 +21,16 @@ $(document).ready(function(){
     var mid = 400;
     
     if($( window ).width() > big){
-        $('#back').attr('src','img/road400274-01.png');
+        $('#back').attr('src','img/Alice.jpg');
      } else if($( window ).width() > mid){
-        $('#back').attr('src','img/road300205-01.png');
+        $('#back').attr('src','img/Alice.jpg');
         $("#enter-pic").addClass('med');
         $( "p.enter" ).css('font-size','12px');
         $( 'p.coffee' ).css('font-size','12px');
         $( ".coffee" ).addClass('med');
          
      } else{
-        $('#back').attr('src','img/road200137-01.png');
+        $('#back').attr('src','img/Alice.jpg');
         $("#enter-pic").addClass('small');
         $( ".coffee" ).addClass('small');
          $( 'p.enter' ).css('font-size','10px');
@@ -56,11 +56,11 @@ $(document).ready(function(){
             $( ".coffee" ).css("opacity", "0");
         
         if($( window ).width() > big){
-            $('#back').attr('src','img/pixelroad400274-01.png');
+            $('#back').attr('src','img/Alice_glitched2.png');
         } else if($( window ).width() > mid){
-            $('#back').attr('src','img/pixelroad300205-01.png');
+            $('#back').attr('src','img/Alice_glitched2.png');
         } else{
-            $('#back').attr('src','img/pixelroad200137-01.png');
+            $('#back').attr('src','img/Alice_glitched2.png');
         }
         
         window.setTimeout(function(){window.location.assign("Home.html");}, 800);
@@ -71,7 +71,7 @@ $(document).ready(function(){
     $(window).resize(function() {
        
     if($( window ).width() > big){
-        $('#back').attr('src','img/road400274-01.png');
+        $('#back').attr('src','img/Alice.jpg');
         
         $( "p.enter" ).css('font-size','14px');
         $( 'p.coffee' ).css('font-size','14px');
@@ -81,7 +81,7 @@ $(document).ready(function(){
         }
         
      } else if($( window ).width() > mid){
-        $('#back').attr('src','img/road300205-01.png');
+        $('#back').attr('src','img/Alice.jpg');
         $("#enter-pic").addClass('med');
         $( "p.enter" ).css('font-size','12px');
         $( 'p.coffee' ).css('font-size','12px');
@@ -92,7 +92,7 @@ $(document).ready(function(){
         }
          
      } else{
-        $('#back').attr('src','img/road200137-01.png');
+        $('#back').attr('src','img/Alice.jpg');
         $("#enter-pic").addClass('small');
         $( ".coffee" ).addClass('small');
          $( 'p.enter' ).css('font-size','10px');
@@ -114,15 +114,19 @@ $(document).ready(function(){
 <body>
     
     <div id="coffee"> 
-        <p class="coffee"> 
+        <p class="coffee"> let's go!
         </p>  
     </div>    
 
     <div id="enter-pic" > 
-        <img id="back" src="img/road400274-01.png", style="width:100%; height:100%; opacity:0.9;" > 
+        <img id="back" src="img/Alice.jpg", style="width:100%; height:100%; opacity:0.9;" > 
         <p class="enter" style="color:darkorange;">click to enter </p> 
     </div>    
 
+    <div style="bottom:2px; right:5px; position: absolute;">
+        <p class="jimmy"> portrait by Bristol-based artist Jimmy Makepeace, glitched by me
+        </p> 
+    </div>
     
 </body>
 </html>
