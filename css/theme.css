@@ -376,6 +376,30 @@ p.dateTxt {
     
 }
 
+#current-photos-container{
+    float: left;
+}
+
+div.current-photos-container img {
+  width: 100%;
+  height: auto;
+}
+
+#current{
+    width: 100%;
+    float: left;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.responsive {
+  padding-left: 0px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  float: left;
+  width: 23%;
+}
+
 
 ul {
     list-style-type: none;
@@ -831,6 +855,9 @@ p.about{
     p{font-size: 11px;}
     #home-box-container{top:20px; bottom:50px; left:20px; right:20px;}
     #projects-box-container{right:170px}
+    .responsive {
+        width: 23%;
+      }
     
 }
 
@@ -841,11 +868,17 @@ p.about{
     #projects-box-container{right:160px}
     #about-container{width:710px; left:calc(50% - 365px);}
     p.about{font-size: 12px;}
+    .responsive {
+        width: 23%;
+      }
 }
 
 @media screen and (max-width: 980px) and (max-height: 550px){
     .box3{width:0px; height:0px; margin:0}
     .empty-box-border2{width:0; height:0;}
+    .responsive {
+        width: 23%;
+      }
 }
 
 @media screen and (max-width: 795px){
@@ -855,12 +888,19 @@ p.about{
     #about-container{width:500px; left:calc(50% - 250px); top:300px;}
     p.about{font-size: 11px;}
     #face{left:calc(50% - 150px); width:300px; height:300px;}
-    
+    .responsive {
+      width: 48%;
+      margin: 6px 0;
+    }
 }
 
 @media screen and (max-width: 680px){
     .box3{width:0px; height:0px; margin:0}
     .empty-box-border2{width:0; height:0;}
+    .responsive {
+        width: 45%;
+        margin: 6px 0;
+      }
 }
 
 
@@ -875,6 +915,9 @@ p.about{
     #home-button{ left:20px; bottom:4%;}
     #about-container{width:350px; left:calc(50% - 175px);}
     p.about{font-size: 10px;}
+    .responsive {
+        width: 45%;
+      }
 }
 
 
@@ -888,12 +931,17 @@ p.about{
     p.colum{font-size:10px;}
     #about-container{width:80%; left:10%; top:270px;}
     #face{left:calc(50% - 125px); width:250px; height:250px;}
-   
+   .responsive {
+        width: 45%;
+      }
 }
 
 @media screen and (max-height: 300px ){
     #home-button{ opacity:0}
     #home-box-container{ bottom:0px; }
+    .responsive {
+        width: 45%;
+      }
 }
 
 @media screen and (max-width: 380px ){
@@ -905,6 +953,9 @@ p.about{
     
     p.enter{font-size:10px; opacity:1}
     p.colum{font-size:8px;}
+    .responsive {
+        width: 45%;
+      }
 }
 
 
