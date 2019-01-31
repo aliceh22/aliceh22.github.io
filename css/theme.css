@@ -17,24 +17,35 @@ p.enter { font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 
 #enter-pic{
     position:fixed; 
-    width:400px; 
-    height:274px;
+    width:350px; 
+    height:350px;
     top:20%; 
-    left:calc(50% - 200px);
+    left:calc(50% - 175px);
 }
 
 #enter-pic.med{
-    width:300px; 
-    height:205px;
-    left:calc(50% - 150px);  
+    width:250px; 
+    height:250px;
+    left:calc(50% - 125px);  
 }
 
 #enter-pic.small{
-    width:200px; 
-    height:137px;
-    left:calc(50% - 100px);  
+    width:100px; 
+    height:100px;
+    left:calc(50% - 50px);  
 }
 
+
+p.jimmy { font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 10px;
+    font-size-adjust:auto;
+	font-style: bold;
+	font-variant: normal;
+	font-weight: 70;
+    color: dimgray;
+    text-align:right;
+    opacity: 0.9;
+}
 
 
 
