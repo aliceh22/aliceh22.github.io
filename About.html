@@ -1,135 +1,125 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+    
 <head>
-<title> Alice Haynes </title> 
-<meta name="viewport", content="width=device-width, initial-scale=1.0">
-<link title="file:///Users/Alice/Documents/Website/AliceWebsite favicon" rel="shortcut icon" href="img/favicon.ico" />
-
-<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:100,300,400,700" rel="stylesheet">
+<title>Alice Haynes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+   
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:100,300,400,700" rel="stylesheet">
+ 
+    <link rel="stylesheet" type="text/css" href="css/newtheme.css">   
     
-<link rel="stylesheet" type="text/css" href="css/theme.css">   
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<script>
-
-$(document).ready(function(){
+    <link rel="shortcut icon" href="Images/favicon.ico" />
     
-    
-    $("ul").css('opacity',0);
-    $("ul").css('right',-200);
-    $("#menu-button").css('opacity',1);
-    $("#menu-button").addClass('notyetclicked');
-    
-    
-    $("#menu-button").click(function(){
-        if($("#menu-button").hasClass('notyetclicked')) {
-        $("ul").css('opacity',1);
-        $("ul").css('right',0);
-        $("p.menu").text("x");
-        $("#menu-button").removeClass('notyetclicked');
-        }  else {
-        $("ul").css('opacity',0);
-        $("ul").css('right',-200);
-        $("p.menu").text("menu");
-        $("#menu-button").addClass('notyetclicked');
-        }
-    });
-    
-    $("#enter-pic").hover(function() {
-        $( this ).css("cursor","pointer");
-        $('#back').attr('src','img/1.png');
-        $( "#coffee" ).css("opacity", "0");
-        $( ".enter" ).css("opacity", "0.9");
-        } , function() {$('#back').attr('src','img/road.jpg'); 
-        $( ".enter" ).css("opacity", "0");  
-        $( "#coffee" ).css("opacity", "0.9");
-    });
-    
-    $("#enter-pic").click(function() {
+    <style>
         
-        $('#back').attr('src','img/9.png');
-        window.setTimeout(function(){
-            window.location.href = "mailto:alicehaynes22@gmail.com";
-        }, 300);
-    });
-    
-    setTimeout( function(){
-    $('.enter').css("opacity", "0.9");
-    $( "#coffee" ).css("opacity", "0");
-    
-       },4000);
-    
-     $( window ).resize(function() {
-         $("#enter-pic").hover(function() {
-        $( this ).css("cursor","pointer");
-        $('#back').attr('src','img/1.png');
-        $( "#coffee" ).css("opacity", "0");
-        $( ".enter" ).css("opacity", "0.9");
-        } , function() {$('#back').attr('src','img/road.jpg'); 
-        $( ".enter" ).css("opacity", "0");  
-        $( "#coffee" ).css("opacity", "0.9");
-    });
-     }); 
-    
-});
-    
-</script> 
+        body {
+          background-image: url("Images/Colours/about_background.JPG");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size:cover;
+          padding-top: 100px;
+        } 
+        
+    </style>
+
 </head>
-
-<body style="background-color:white;">
     
     
-    <div id="container">  
+    
+<body>
 
-        <div id="menu-button"> <p class="menu">menu</p></div>
+    
+    <div class="mainbody" style="background: none; text-align: center;">
+<h1 class="h1-font"  style="text-align: center; color: white;"> &#127820;   </h1>
+         
+       <h1 class="h1-font"  style="text-align: center; color: white;"> alice haynes<br/>   </h1>
+         
+    <h1 class="h1-font"  style="text-align: center; color: orange;">  • people  •  technology • craft  • <br/><br/><br/></h1>
 
-        <div > 
-            <ul> 
-                <li><a href="Home.html">alice haynes</a></li> 
-                <li><p></p></li>
-                <li><p></p></li>
-                <li><a class="pink" href="About.html">about</a></li>
-                <li><a  href="Current.html">current</a></li> 
-                <li><a  href="Archive.html">archive</a></li> 
-                <li><a  href="Volunteering.html">volunteering</a></li>
-                <li><a  href="Play.html">play</a></li>
-                <li><a  href="Contact.html">contact</a></li>
-            </ul> 
-        </div>
+        
+    </div> 
+    
+    <div class="mainbody" style="background: none;">
+        
+         <div class="topnav">
+          <a href="contact.html">contact</a>
+          <a href="links.html">links</a>
+          <a href="play.html">craft</a>
+          <a href="research.html">research</a>
+          <a href="community.html">community</a>
+          <a href="about.html" class="page-text-selected">about</a>
+         </div>
+        
+    </div>
+    
+    
+    
+    
+    <div class="mainbody">
 
-        <div style="margin:0px; top:20px; left:0; right:0; bottom:10px; min-height:200px; background-color: none; overflow: scroll;" class="box-container">
-
-            <div id="face">
-                <img src="img/profile2.jpg" style="height:80%; margin-top:10%; width:80%; margin-left:10%;">
+    
+        <div class="text-container">
+             <div class="text-container-image-item">
+                <img src="Images/About/AliceCircle-02.jpg" alt="Test image" class="grid-image">
+                
+             </div>
+             <div class="text-container-text-item">
+            
+             <h1 class="h1-font"> Hello </h1>
+             <p class="p-font"> 
+            
+                  My name is Alice, I am a maker and roboticist based in Bristol, UK. 
+                 <br/><br/>
+                 At the core of my pursuits is a fascination with interfaces - the boundaries between us, within us and around us. How we interface with technology, other beings and ourselves. On a social level, these interfaces define our ability to communicate across space and time. They are becoming increasingly less and less tangible and more and more virtual, but I like to bring things back to earth and back to our physical bodies. My work (and play) currently revolve around the following themes...
+                 
+                 <br/><br/>
+                 <a class="a-link-font"  href="community.html">> community &lt;</a> <br/>
+                 People-oriented practices, workshops and projects.<br/>
+                 <br/>
+                 <a class="a-link-font"  href="research.html">> research &lt;</a> <br/>
+                 Investigating how human interactions can be mediated by technology.<br/>
+                 
+                 <br/>
+                 <a class="a-link-font"  href="play.html" >> craft &lt;</a> <br/>
+                 Making, designing and playing, using both traditional and modern techniques.<br/>
+                 
+                 <br/><br/>
+                 If you'd like to know more about any of the projects, groups or methods you find on this website please don't hesitate to get in touch. My virtual door is always open for coffee and a chat...or hit me up with an idea you'd like to collaborate on!
+                 <br/><br/>
+                 
+                 PS This website is currently under construction, please bear with &#128295;
+                 
+                  </p>
+                 
+                 
             </div>
-
-            <div id="about-container">
-                
-                <p class="boxLink" style="color:darkorange; font-weight: 300; text-align:center;">alice haynes</p>
-                <p class="about" style="text-align:center;">Roboticist · Mathematician · Artist</p>
-                <p class="about" >
-                
-                    <br/><br/>
-                    Currently studying towards my PhD at the <a class="txt-link" href="http://www.brl.ac.uk/" target="_blank">Bristol Robotics Lab</a>, I work with supervisor <a class="txt-link" href="https://www.youtube.com/watch?v=CVdPhUPO5YU" target="_blank">Jonathan Rossiter</a> in the <a class="txt-link" href="https://www.youtube.com/watch?v=CVx-iE-qeCY" target="_blank">Soft Robotics</a> group, investigating novel approaches to haptic interfaces and wearables. 
-                    <br/><br/>
-                    I believe in research being open to the public and strive to find opportunities to share our work. This year we showcased our Soft Robotics research to the public at <a class="txt-link" href="https://www.colstonhall.org/shows/research-without-borders-2018/" target="_blank">Research Without Borders</a> and <a class="txt-link" href="https://www.wethecurious.org/event/futures-2018" target="_blank">FUTURES @ We the Curious</a>. I am also working part time at the <a class="txt-link" href="https://kwmc.org.uk/" target="_blank">Knowle West Media Centre</a> looking at ways to engage with the local community via a series of workshops. This will include creating a piece of robotic art for their new makerspace, The Factory. Find out more about our collaboration <a class="txt-link" href="https://aliceatthefactory.wordpress.com/" target="_blank">here</a>.
-                    <br/><br/>
-                <p/>
-                
-                <p class="boxLink" style="color:darkorange; text-align:left; font-weight: 300;" >previous + education</p>
-                <p class="about" >
-                    
-                    In 2016, I graduated top of my year from my Masters in Engineering Mathematics with First Class honours. During my degree, I built a robotic horse, designed and fabricated a wearable tactile device and delved into some freaky chaotic nonlinear dynamics among other projects. I also worked in research, finance and volunteered with over eight charities I care about deeply in areas such as conservation, education and accessibility of the arts. After graduation I spent some time exploring, meeting people and learning how to build stuff, before returning to Bristol for my PhD.   
-                    <br/> <br/> 
-                    One year into my research, I have helped build a robot to compete at the <a class="txt-link"  href="http://www.robosoftca.eu/index.php/events/robosoft-grand-challenge" target="_blank">Robosoft Grand Challenge</a> in Livorno, Italy, collaborated with Kyoto University in Japan on wearable haptic devices (paper accepted to IEEE-RAL) and created a range of dynamic textile devices with e-textiles designer Bonny Binary. 
-                    <br/><br/>
-                    Please explore the site to find out more and don't hesitate to get in touch!
-                    </p>
-            </div> 
+            
+            
         </div>
-    </div>  
+        
+    </div> 
+    
+   
+    
+
+    
+    
+    <div class="mainbody" style="margin-top: 5%; margin-bottom: 5%; background: none;">
+        
+        
+        <div class="end-of-page" style="text-align: center;">
+             
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+            <p  class="p-font" style="text-align: center;" xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#">
+                My work is licensed under the Creative Commons <a class="a-grid-font" href="https://creativecommons.org/licenses/by-sa/4.0?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-ShareAlike 4.0 International</a>
+                <br/>
+                This means that you can share, copy, remix and/or adapt for commercial or non-commercial purposes as long as you use the same license to distribute the work, credit the author(s), and indicate if changes have been made.
+            </p>
+            
+        </div>
+    </div>
+
 </body>
 </html>
-

@@ -1,182 +1,100 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+    
 <head>
-<title> Alice Haynes </title> 
-<meta name="viewport", content="width=device-width, initial-scale=1.0">
-<link title="file:///Users/Alice/Documents/Website/AliceWebsite favicon" rel="shortcut icon" href="img/favicon.ico" />
-
-<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:100,300,400,700" rel="stylesheet">
-    
-<link rel="stylesheet" type="text/css" href="css/theme.css">   
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<script>
-
-$(document).ready(function(){
-       
-    $("ul").css('opacity',0);
-    $("ul").css('right',-200);
-    $("#menu-button").css('opacity',1);
-    $("#menu-button").addClass('notyetclicked'); 
-    
-    $("#menu-button").click(function(){
-        if($("#menu-button").hasClass('notyetclicked')) {
-        $("ul").css('opacity',1);
-        $("ul").css('right',0);
-        $("p.menu").text("x");
-        $("#menu-button").removeClass('notyetclicked');
-        }  else {
-        $("ul").css('opacity',0);
-        $("ul").css('right',-200);
-        $("p.menu").text("menu");
-        $("#menu-button").addClass('notyetclicked');
-        }
-    });
-    
-    var big = 600;
-    var mid = 400;
-    
-    if($( window ).width() > big){
-        $('#back').attr('src','img/chat.jpg');
-     } else if($( window ).width() > mid){
-        $('#back').attr('src','img/chat.jpg');
-        $("#enter-pic").addClass('med');
-        $( "p.enter" ).css('font-size','12px');
-        $( 'p.coffee' ).css('font-size','12px');
-        $( ".coffee" ).addClass('med');
-         
-     } else{
-        $('#back').attr('src','img/chat.jpg');
-        $("#enter-pic").addClass('small');
-        $( ".coffee" ).addClass('small');
-         $( 'p.enter' ).css('font-size','10px');
-         $( 'p.coffee' ).css('font-size','10px');
-     }
-                      
-   $("#enter-pic").hover(function() {
-        $( this ).css("cursor","pointer");
-        $( ".enter" ).css("opacity", "0.9");
-        $( "#coffee" ).css("opacity", "0");
-       
-       if($( window ).width() > big){
-            $('#back').attr('src','img/chat.jpg');
-        } else if($( window ).width() > mid){
-            $('#back').attr('src','img/chat.jpg');
-        } else{
-            $('#back').attr('src','img/chat.jpg');
-        }
-        
-        } , function() {
-        $( ".enter" ).css("opacity", "0");
-        $( "#coffee" ).css("opacity", "0.9");
-        
-       if($( window ).width() > big){
-            $('#back').attr('src','img/chat.jpg');
-        } else if($( window ).width() > mid){
-            $('#back').attr('src','img/chat.jpg');
-        } else{
-            $('#back').attr('src','img/chat.jpg');
-        }
-   }); 
-    
-    $("#enter-pic").click(function() {
-            
-            $( ".enter" ).css("opacity", "0");
-            $( ".coffee" ).css("opacity", "0");
-        
-        if($( window ).width() > big){
-            $('#back').attr('src','img/chat.jpg');
-        } else if($( window ).width() > mid){
-            $('#back').attr('src','img/chat.jpg');
-        } else{
-            $('#back').attr('src','img/chat.jpg');
-        }
-        
-       window.setTimeout(function(){
-            window.location.href = "mailto:alice.haynes@bristol.ac.uk";
-        }, 600);
-    });
-    
-    $(window).resize(function() {
-       
-    if($( window ).width() > big){
-        $('#back').attr('src','img/chat.jpg');
-        
-        $( "p.enter" ).css('font-size','14px');
-        $( 'p.coffee' ).css('font-size','14px');
-        
-        if($("#enter-pic").hasClass('med')){
-            $("#enter-pic").removeClass('med');
-        }
-        
-     } else if($( window ).width() > mid){
-        $('#back').attr('src','img/chat.jpg');
-        $("#enter-pic").addClass('med');
-        $( "p.enter" ).css('font-size','12px');
-        $( 'p.coffee' ).css('font-size','12px');
-        $( ".coffee" ).addClass('med');
-         
-        if($("#enter-pic").hasClass('small')){
-            $("#enter-pic").removeClass('small');
-        }
-         
-     } else{
-        $('#back').attr('src','img/chat.jpg');
-        $("#enter-pic").addClass('small');
-        $( ".coffee" ).addClass('small');
-         $( 'p.enter' ).css('font-size','10px');
-         $( 'p.coffee' ).css('font-size','10px');
-     }    
-   });
-    
-    setTimeout( function(){
-    $('.enter').css("opacity", "0.9");
-    $( "#coffee" ).css("opacity", "0");
-    
-       },3000);   
-    
-});
-    
-</script>  
-</head>
-
-<body style="background-color:white;">
+<title>Alice Haynes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
    
-    <div id="container">     
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:100,300,400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+ 
+    <link rel="stylesheet" type="text/css" href="css/newtheme.css">   
+    
+    <style>
+        
+        body {
+          background-image: url("Images/Colours/contact_background.JPG");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size:cover;
+          padding-top: 100px;
+        } 
+        
+    </style>
 
-        <div id="menu-button"> <p class="menu">menu</p></div>
+</head>
+    
+    
+    
+<body>
+    
+        <div class="mainbody" style="background: none; text-align: center;">
+<h1 class="h1-font"  style="text-align: center; color: white;"> &#127820;   </h1>
+         
+       <h1 class="h1-font"  style="text-align: center; color: white;"> alice haynes<br/>   </h1>
+         
+    <h1 class="h1-font"  style="text-align: center; color: orange;">  • people  •  technology • craft  • <br/><br/><br/></h1>
 
-        <div > 
-            <ul> 
-                <li><a href="Home.html">alice haynes</a></li> 
-                <li><p></p></li>
-                <li><p></p></li>
-                <li><a  href="About.html">about</a></li>
-                <li><a  href="Current.html">current</a></li> 
-                <li><a  href="Archive.html">archive</a></li> 
-                <li><a  href="Volunteering.html">volunteering</a></li>
-                <li><a  href="Play.html">play</a></li>
-                <li><a class="pink" href="Contact.html">contact</a></li>
-            </ul> 
+        
+    </div> 
+
+    <div class="mainbody" style="background: none;">
+        
+         <div class="topnav">
+          <a href="contact.html" class="page-text-selected">contact</a>
+          <a href="links.html">links</a>
+          <a href="play.html">craft</a>
+          <a href="research.html">research</a>
+          <a href="community.html">community</a>
+          <a href="about.html">about</a>
+         </div>
+        
+    </div>
+    
+    <div class="mainbody">
+    
+        <div class="text-container">
+             <div class="text-container-image-item">
+                <img src="Images/Contact/ContactCircle-02.jpg" alt="Test image" class="grid-image">
+
+             </div>
+             <div class="text-container-text-item">
+                 
+                 <h1 class="h1-font"  >get in touch...</h1>
+                 <p class="p-font">
+                     I'd love to hear from you and am always open to discussing new projects or collaborations. My mycelial shoots love to mingle and link up with new folks! Ping me an email at 
+                     <br/>
+                     a l i c e . h a y n e s @ b r i s t o l . a c . u k 
+
+                 </p>
+
+                 <p class="p-font" style = "font-weight: 400; color:grey;"> offerings: </p>  
+
+                 <p class="p-font">
+                     
+                    My main interest at the moment is in collaborative projects that are community-oriented. I can offer a combination of technical skills (from my robotics and mathematics background) and crafts based skills (from my love of making things). 
+                    
+                     <br/> <br/>
+                    I am often available to run workshops (intros to soft robotics, life drawing with code, basic animatronics or suggest something new!) or one-to-one sessions (teaching a specific skill on a more casual basis). I am happy to offer pay-as-you-can fees to community projects or individuals that are short of funding.
+                     <br/><br/> 
+
+                </p>
+            </div>
         </div>
-
-
-        <div id="coffee">
-            <p class="coffee">fancy a chat?</p>
+        
+    
+    </div>
+    
+    <div class="mainbody" style=" background: none;">
+        
+        
+        <div class="end-of-page" style="text-align: center;">
+             
+            <h1>&#128236; </h1>
+           
         </div>
-
-        <div id="enter-pic">  
-            <img id="back" src="img/chat.jpg", style="width:80%; margin-left:10%; opacity:0.9;" >  
-            <p class="enter" style="color:darkorange;" >
-               
-                click to email me  </p> 
-        </div>    
-
     </div>
 
 </body>
 </html>
-
-

@@ -1,174 +1,192 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+    
 <head>
-<title> Alice Haynes </title> 
-<meta name="viewport", content="width=device-width, initial-scale=1.0">
-<link title="file:///Users/Alice/Documents/Website/AliceWebsite favicon" rel="shortcut icon" href="img/favicon.ico" />
-
-<link rel="stylesheet" type="text/css" href="css/theme.css">   
-
-<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:100,300,400,700" rel="stylesheet">
-    
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<script>
-
-$(document).ready(function(){
+<title>Alice Haynes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
    
-    $("#playbox5").hover(function() {
-        $(this).css("cursor", "pointer");
-        $(this).find(".box-txt").addClass('hovered');
-        $("#playbox5").addClass('hover');
-   },function(){
-       $(this).find(".box-txt").removeClass('hovered');
-        $("#playbox5").removeClass('hover');
-   });
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:100,300,400,700" rel="stylesheet">
     
-   $("#playbox5").click(function() {
-        window.open('https://www.flickr.com/photos/145760272@N06/albums');
-   });
-    
-    
-    $("#playbox6").hover(function() {
-        $(this).css("cursor", "pointer");
-        $(this).find(".box-txt").addClass('hovered');
-        $("#playbox6").addClass('hover');
-       
-   },function(){
-       $(this).find(".box-txt").removeClass('hovered');
-        $("#playbox6").removeClass('hover');
-   });
-    
-   $("#playbox6").click(function() {
-        window.open('http://in-wonderland-haynes.tumblr.com/');
-   });
-    
-    
-    $("#playbox7").hover(function() {
-        $(this).css("cursor", "pointer");
-        $(this).find(".box-txt").addClass('hovered');
-        $("#playbox7").addClass('hover');
-       
-   },function(){
-       $(this).find(".box-txt").removeClass('hovered');
-        $("#playbox7").removeClass('hover');
-   });
-    
-   $("#playbox7").click(function() {
-        window.open('http://www.alicehaynes.com/Processing.html');
-   });
-    
-
-    if($( window ).width() < 800){
-        $("ul").css('opacity',0);
-        $("ul").css('right',-200);
-        $("#menu-button").css('opacity',1);
-        $("#menu-button").addClass('notyetclicked'); 
-        
-    } else {}
-    
-    if($( window ).width() < 980){
-        $("#projects-box-container").css('max-width',400);
-    } else {}
-    
-    
-    $( window ).resize(function() {
-        
-         
-        
-        if($( window ).width() < 980){
-        $("#projects-box-container").css('max-width',400);
-        } else {
-            $("#projects-box-container").css('max-width',1500);
-        }
-        
-        if($( window ).width() < 800){
-            $("ul").css('opacity',0);
-            $("ul").css('right',-200);
-            $("#menu-button").css('opacity',1);
-            $("#menu-button").addClass('notyetclicked');
-            
-        } else{
-            $("ul").css('opacity',1);
-            $("ul").css('right',0);
-            $("#menu-button").css('opacity',0);
-              
-        }
-    });
-    
-    $("#menu-button").click(function(){
-        if($("#menu-button").hasClass('notyetclicked')) {
-        $("ul").css('opacity',1);
-        $("ul").css('right',0);
-        $("p.menu").text("x");
-        $("#menu-button").removeClass('notyetclicked');
-        }  else {
-        $("ul").css('opacity',0);
-        $("ul").css('right',-200);
-        $("p.menu").text("menu");
-        $("#menu-button").addClass('notyetclicked');
-        }
-    });
-                       
-
-    
-});
-</script>
-    
-    
-</head>
-
+    <link rel="shortcut icon" href="Images/favicon.ico" />
  
-<body style="background-color:white;">   
+    <link rel="stylesheet" type="text/css" href="css/newtheme.css">   
     
-<div id="container">  
+    <style>
         
-<div id="menu-button"> <p class="menu">menu</p></div>
+        body {
+          background-image: url("Images/Colours/play_background.JPG");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size:cover;
+          padding-top: 100px;
+        } 
+        
+    </style>
 
-<div > <ul> <li><a href="Home.html">alice haynes</a></li> 
-    <li><p></p></li>
-    <li><p></p></li>
-    <li><a  href="About.html">about</a></li>
-    <li><a  href="Current.html">current</a></li> 
-    <li><a  href="Archive.html">archive</a></li> 
-    <li><a  href="Volunteering.html">volunteering</a></li>
-    <li><a class="pink" href="Play.html">play</a></li>
-    <li><a href="Contact.html">contact</a></li>
-    </ul> 
-</div>
+</head>
     
-<div id="projects-box-container" class="box-container" style="opacity:0.9">
     
-    <div  class="box" >
-        <div class="content-noa" id="playbox5">
-        <div class="box-txt" >
-                <p class="boxLink"> flickr </p>
-            </div></div>
-    </div>
-    <div  class="box2" ><div class="empty-box-border" ></div></div>
+<body>
+
+        <div class="mainbody" style="background: none; text-align: center;">
+<h1 class="h1-font"  style="text-align: center; color: white;"> &#127820;   </h1>
+         
+       <h1 class="h1-font"  style="text-align: center; color: white;"> alice haynes<br/>   </h1>
+         
+    <h1 class="h1-font"  style="text-align: center; color: orange;">  • people  •  technology • craft  • <br/><br/><br/></h1>
+
+        
+    </div> 
     
-    <div  class="box" >
-        <div class="content-noa" id="playbox7">
-        <div class="box-txt" >
-                <p class="boxLink"> processing </p>
-            </div></div>
+    <div class="mainbody" style="background: none;">
+        <div class="topnav">
+          <a href="contact.html">contact</a>
+          <a href="links.html">links</a>
+          <a href="play.html" class="page-text-selected">craft</a>
+          <a href="research.html">research</a>
+          <a href="community.html">community</a>
+          <a href="about.html">about</a>
+         </div>
     </div>
-    <div  class="box2" ><div class="empty-box-border" ></div></div>
-    <div  class="box2" ><div class="empty-box-border" ></div></div>
-    <div  class="box" >
-        <div class="content-noa" id="playbox6">
-        <div class="box-txt" >
-                <p class="boxLink"> tumblr </p>
-            </div></div>
+    
+    <div class="mainbody" >
+        <div class="text-container">
+             <div class="text-container-image-item">
+                <img src="Images/Personal/PlayCircle-02.jpg" alt="Test image" class="grid-image">
+
+             </div>
+             <div class="text-container-text-item">
+             <h1 class="h1-font" >craft + play</h1>
+             <p class="p-font"> I love to have busy hands and generally have too many projects on the go at any one time. In particular I am interested in making use of whatever I can find, forage or 'unjunk' in the process of creating. 
+                 <br/><br/>
+                 Recently I have been most excited by designing, making and mending clothes, which you can see <a class="a-link-font" href="portfolio/Sewing.html">here</a>. Some friends and I birthed <a class="a-link-font" href="portfolio/Quilting.html">Hex club</a> during lockdown 2020 making collaborative patchwork quilts out of our offcut fabrics, old clothes and the many donated bits and pieces friends and family sent us. I am enjoying learning not only the physical skills of sewing but also the mental challenge of working out the best order in which to assemble parts to ensure hidden seams and a pleasing finish.
+                 <br/> <br/>
+                 Collage and print making has also been a highlight of the past year. Making <a class="a-link-font" href="portfolio/ZineMaking.html">zines</a> for friends has felt like a tangible way to keep in touch and send them some loving.
+                    </p>
+            </div>
+        </div>
+
     </div>
-    <div  class="box2" ><div class="empty-box-border" ></div></div>
-    <div  class="box2" ><div class="empty-box-border" ></div></div>
-   
-</div>   
-</div>   
+    
+    <div class="mainbody" style="margin-top: 5%;">
+  
+        
+        <div class="grid-container">
+            
+            <div class="grid-item">
+                
+                <a href="portfolio/Sewing.html" class="a-grid-font"><img src="Images/Personal/SewingDarningPatchwork/QuiltedTop7-04.jpg" alt="Test image" class="grid-image" > Sewing </a>
+                
+                <p class="grid-font"> 
+                    
+                </p>
+                   
+            </div>
+            
+            
+            <div class="grid-item">
+                <a href="portfolio/CCC.html" class="a-grid-font"><img src="Images/Community/CCC/hornsSquare.jpg" alt="Test image" class="grid-image">Inflatable Horns</a>
+                
+                <p class="grid-font"> 
+                </p>
+            </div>
+            
+             <div class="grid-item">
+                
+                <a href="portfolio/Quilting.html" class="a-grid-font"><img src="Images/Personal/SewingDarningPatchwork/quilt.JPG" alt="Test image" class="grid-image" > Hex club</a>
+                
+                <p class="grid-font"> 
+                    
+                </p>
+               
+                   
+            </div>
+            
+            
+            <div class="grid-item">
+                
+                <a href="portfolio/ZineMaking.html" class="a-grid-font"><img src="Images/Personal/Zines/zine2.jpg" alt="Test image" class="grid-image" > Zine making</a>
+                
+                <p class="grid-font"> 
+                    
+                </p>
+                   
+            </div>
+            
+        
+           
+            <div class="grid-item">
+                
+                <a href="portfolio/Printing.html" class="a-grid-font"><img src="Images/Personal/PrintingPainting/printBird.JPG" alt="Test image" class="grid-image" > Print making</a>
+                
+                <p class="grid-font"> 
+                    
+                </p>
+                   
+            </div>
+            
+           
+            
+            
+            
+            
+            <div class="grid-item">
+                
+                <a href="portfolio/BookBinding.html" class="a-grid-font"><img src="Images/Personal/BookBinding/BookBinding.jpg" alt="Test image" class="grid-image" > Book binding</a>
+                
+                <p class="grid-font"> 
+                    
+                </p>
+                   
+            </div>
+    <!--        
+             <div class="grid-item">
+                
+                <a href="portfolio/Chickens.html" class="a-grid-font"><img src="Images/Personal/Chickens/chicks.gif" alt="Test image" class="grid-image" > Raising chickens</a>
+                
+                <p class="grid-font"> 
+                    
+                </p>
+                   
+            </div>
+-->
+            
+            <div class="grid-item">
+                
+                <a href="portfolio/WoodWork.html" class="a-grid-font"><img src="Images/Personal/Woodwork/Woodwork.jpg" alt="Test image" class="grid-image" > Wood work</a>
+                
+                <p class="grid-font"> 
+                    
+                </p>
+                   
+            </div>
+            
+            
+            
+            
+            
+             
+            
+<!--     horn helmet, textiles,        -->
+            
+        </div>
+        
+        
+    
+    </div>
+
+<div class="mainbody" style=" background: none;">
+        
+        
+        <div class="end-of-page" style="text-align: center;">
+             
+            <h1>&#127812; </h1>
+           
+        </div>
+    </div>
+
+
+
 </body>
 </html>
-
-

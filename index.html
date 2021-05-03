@@ -1,135 +1,125 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+    
 <head>
-<title> Alice Haynes </title> 
-<meta name="viewport", content="width=device-width, initial-scale=1.0">
-<link title="file:///Users/Alice/Documents/Website/AliceWebsite favicon" rel="shortcut icon" href="img/favicon.ico" />
-
-    
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah" rel="stylesheet">
-    
-<link rel="stylesheet" type="text/css" href="css/theme.css"> 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<script>
-
-$(document).ready(function(){
-    
-    var big = 600;
-    var mid = 400;
-    
-    if($( window ).width() > big){
-        $('#back').attr('src','img/Alice.jpg');
-     } else if($( window ).width() > mid){
-        $('#back').attr('src','img/Alice.jpg');
-        $("#enter-pic").addClass('med');
-        $( "p.enter" ).css('font-size','12px');
-        $( 'p.coffee' ).css('font-size','12px');
-        $( ".coffee" ).addClass('med');
-         
-     } else{
-        $('#back').attr('src','img/Alice.jpg');
-        $("#enter-pic").addClass('small');
-        $( ".coffee" ).addClass('small');
-         $( 'p.enter' ).css('font-size','10px');
-         $( 'p.coffee' ).css('font-size','10px');
-     }
-    
-    
-                      
-   $("#enter-pic").hover(function() {
-        $( this ).css("cursor","pointer");
-        $( ".enter" ).css("opacity", "0.9");
-        $('.coffee').css("color", "white");
-        
-        } , function() {
-        $( ".enter" ).css("opacity", "0");
-        $('.coffee').css("color", "white");
-   }); 
-    
-    
-    $("#enter-pic").click(function() {
-            
-            $( ".enter" ).css("opacity", "0");
-            $( ".coffee" ).css("opacity", "0");
-        $(this).unbind("mouseenter mouseleave");
-        
-        if($( window ).width() > big){
-            $('#back').attr('src','img/Alice_glitched2.jpg');
-        } else if($( window ).width() > mid){
-            $('#back').attr('src','img/Alice_glitched2.jpg');
-        } else{
-            $('#back').attr('src','img/Alice_glitched2.jpg');
-        }
-        
-        window.setTimeout(function(){window.location.assign("Home.html");}, 800);
-    });
-    
-    
+<title>Alice Haynes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
    
-    $(window).resize(function() {
-       
-    if($( window ).width() > big){
-        $('#back').attr('src','img/Alice.jpg');
-        
-        $( "p.enter" ).css('font-size','14px');
-        $( 'p.coffee' ).css('font-size','14px');
-        
-        if($("#enter-pic").hasClass('med')){
-            $("#enter-pic").removeClass('med');
-        }
-        
-     } else if($( window ).width() > mid){
-        $('#back').attr('src','img/Alice.jpg');
-        $("#enter-pic").addClass('med');
-        $( "p.enter" ).css('font-size','12px');
-        $( 'p.coffee' ).css('font-size','12px');
-        $( ".coffee" ).addClass('med');
-         
-        if($("#enter-pic").hasClass('small')){
-            $("#enter-pic").removeClass('small');
-        }
-         
-     } else{
-        $('#back').attr('src','img/Alice.jpg');
-        $("#enter-pic").addClass('small');
-        $( ".coffee" ).addClass('small');
-         $( 'p.enter' ).css('font-size','10px');
-         $( 'p.coffee' ).css('font-size','10px');
-     }
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:100,300,400,700" rel="stylesheet">
+ 
+    <link rel="stylesheet" type="text/css" href="css/newtheme.css">   
     
-       
-   });
+    <link rel="shortcut icon" href="Images/favicon.ico" />
     
-    setTimeout( function(){
-    $('.enter').css("opacity", "0.9");
-        $('.coffee').css("color", "white");
-       },3200);  
-});
-    
-</script>      
+    <style>
+        
+        body {
+          background-image: url("Images/Colours/about_background.JPG");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size:cover;
+          padding-top: 100px;
+        } 
+        
+    </style>
+
 </head>
-
-<body>
     
-    <div id="coffee"> 
-        <p class="coffee"> let's go!
-        </p>  
-    </div>    
+    
+    
+<body>
 
-    <div id="enter-pic" > 
-        <img id="back" src="img/Alice.jpg", style="width:100%; height:100%; opacity:0.9;" > 
-        <p class="enter" style="color:darkorange;">click to enter </p> 
-    </div>    
+    
+    <div class="mainbody" style="background: none; text-align: center;">
+<h1 class="h1-font"  style="text-align: center; color: white;"> &#127820;   </h1>
+         
+       <h1 class="h1-font"  style="text-align: center; color: white;"> alice haynes<br/>   </h1>
+         
+    <h1 class="h1-font"  style="text-align: center; color: orange;">  • people  •  technology • craft  • <br/><br/><br/></h1>
 
-    <div style="bottom:2px; right:5px; position: absolute;">
-        <p class="jimmy"> portrait by Bristol-based artist Jimmy Makepeace, glitched by me
-        </p> 
+        
+    </div> 
+    
+    <div class="mainbody" style="background: none;">
+        
+         <div class="topnav">
+          <a href="contact.html">contact</a>
+          <a href="links.html">links</a>
+          <a href="play.html">craft</a>
+          <a href="research.html">research</a>
+          <a href="community.html">community</a>
+          <a href="about.html" class="page-text-selected">about</a>
+         </div>
+        
     </div>
     
+    
+    
+    
+    <div class="mainbody">
+
+    
+        <div class="text-container">
+             <div class="text-container-image-item">
+                <img src="Images/About/AliceCircle-02.jpg" alt="Test image" class="grid-image">
+                
+             </div>
+             <div class="text-container-text-item">
+            
+             <h1 class="h1-font"> Hello </h1>
+             <p class="p-font"> 
+            
+                  My name is Alice, I am a maker and roboticist based in Bristol, UK. 
+                 <br/><br/>
+                 At the core of my pursuits is a fascination with interfaces - the boundaries between us, within us and around us. How we interface with technology, other beings and ourselves. On a social level, these interfaces define our ability to communicate across space and time. They are becoming increasingly less and less tangible and more and more virtual, but I like to bring things back to earth and back to our physical bodies. My work (and play) currently revolve around the following themes...
+                 
+                 <br/><br/>
+                 <a class="a-link-font"  href="community.html">> community &lt;</a> <br/>
+                 People-oriented practices, workshops and projects.<br/>
+                 <br/>
+                 <a class="a-link-font"  href="research.html">> research &lt;</a> <br/>
+                 Investigating how human interactions can be mediated by technology.<br/>
+                 
+                 <br/>
+                 <a class="a-link-font"  href="play.html" >> craft &lt;</a> <br/>
+                 Making, designing and playing, using both traditional and modern techniques.<br/>
+                 
+                 <br/><br/>
+                 If you'd like to know more about any of the projects, groups or methods you find on this website please don't hesitate to get in touch. My virtual door is always open for coffee and a chat...or hit me up with an idea you'd like to collaborate on!
+                 <br/><br/>
+                 
+                 PS This website is currently under construction, please bear with &#128295;
+                 
+                  </p>
+                 
+                 
+            </div>
+            
+            
+        </div>
+        
+    </div> 
+    
+   
+    
+
+    
+    
+    <div class="mainbody" style="margin-top: 5%; margin-bottom: 5%; background: none;">
+        
+        
+        <div class="end-of-page" style="text-align: center;">
+             
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+            <p  class="p-font" style="text-align: center;" xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#">
+                My work is licensed under the Creative Commons <a class="a-grid-font" href="https://creativecommons.org/licenses/by-sa/4.0?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-ShareAlike 4.0 International</a>
+                <br/>
+                This means that you can share, copy, remix and/or adapt for commercial or non-commercial purposes as long as you use the same license to distribute the work, credit the author(s), and indicate if changes have been made.
+            </p>
+            
+        </div>
+    </div>
+
 </body>
 </html>
-
-
