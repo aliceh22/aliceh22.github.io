@@ -63,15 +63,7 @@
   
 }
 
-.h1-font {
-    text-decoration: none;
-    font-size:25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    text-align:left;
-    color:orange;
-    /*coral*/
-}
+
 
 .enter-name {
     text-decoration: none;
@@ -222,8 +214,19 @@
     text-decoration: none;
 }
 
+.h1-font {
+    text-decoration: none;
+    font-size:25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align:left;
+    color:orange;
+    /*coral*/
+}
+
 .a-link-font {
-    color: orange; 
+    color:orange;
+    background-color: cornsilk;
     text-align:left; 
     font-weight: 300;
     font-family: 'Lato', sans-serif;
@@ -232,7 +235,7 @@
 }
 
 .a-link-font:hover {
-    color:white;
+    color:cornsilk;
     background-color: turquoise;
 }
 
